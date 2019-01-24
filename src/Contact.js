@@ -1,18 +1,16 @@
 import React, { Component } from "react";
 
-class Contact extends Comment {
-    render(){
-        return(
+class Contact extends Component {
+    render() {
+        return (
             <div>
-                <h2>
-                    Got questions?
-                </h2>
-                <p>
-                    The easiest thing to do is post on our 
-                    <a href="http://forum.kirupa.com">forums</a>.
-                </p>
+                <h2>GOT QUESTIONS?</h2>
+                <p>The easiest thing to do is post on
+        our <a href="http://forum.kirupa.com">forums</a>.
+        </p>
             </div>
         );
     }
 }
+
 export default Contact;
