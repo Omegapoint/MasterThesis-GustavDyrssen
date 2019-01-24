@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import Main from "./Main";
 import * as serviceWorker from './serviceWorker';
+import "./index.css";
 
 ReactDOM.render(
     <Main />, 
