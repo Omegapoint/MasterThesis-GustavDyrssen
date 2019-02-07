@@ -22,6 +22,10 @@ import logolighticon from '../../assets/images/logo-light-icon.png';
 import logodarktext from '../../assets/images/logo-text.png';
 import logolighttext from '../../assets/images/logo-light-text.png';
 
+import opText from '../../assets/images/omegapoint2.png';
+import opLogo from '../../assets/images/omegapoint2.png';
+
+
 class Header extends React.Component {
 	constructor(props) {
 		super(props);
@@ -52,25 +56,18 @@ class Header extends React.Component {
 				<Navbar className="top-navbar" dark expand="md">
 					<div className="navbar-header" id="logobg" data-logobg="skin6">
 						{/*--------------------------------------------------------------------------------*/}
-						{/* Logos Or Icon will be goes here for Light Layout && Dark Layout                */}
+						{/* Logos and Icon goes here for Light Layout && Dark Layout                */}
 						{/*--------------------------------------------------------------------------------*/}
 						<NavbarBrand href="/">
 							<b className="logo-icon">
-								<img src={logodarkicon} alt="homepage" className="dark-logo" />
 								<img
-									src={logolighticon}
+									src={opLogo}
+									width="50%" 
+									height="50%"
 									alt="homepage"
-									className="light-logo"
+									className="opLogo-logo"
 								/>
 							</b>
-							<span className="logo-text">
-								<img src={logodarktext} alt="homepage" className="dark-logo" />
-								<img
-									src={logolighttext}
-									className="light-logo"
-									alt="homepage"
-								/>
-							</span>
 						</NavbarBrand>
 						{/*--------------------------------------------------------------------------------*/}
 						{/* Mobile View Toggler  [visible only after 768px screen]                         */}
@@ -82,7 +79,7 @@ class Header extends React.Component {
 					<Collapse className="navbarbg" isOpen={this.state.isOpen} navbar data-navbarbg="skin1" >
 						<Nav className="ml-auto float-right" navbar>
 							<NavItem>
-								<a href="" className="btn btn-danger mr-2" style={{ marginTop: '15px' }}>Upgrade to Pro</a>
+								<a href="" className="btn btn-danger mr-2" style={{ marginTop: '15px' }}>Dark Pattern User Test System</a>
 							</NavItem>
 							{/*--------------------------------------------------------------------------------*/}
 							{/* Start Profile Dropdown                                                         */}
