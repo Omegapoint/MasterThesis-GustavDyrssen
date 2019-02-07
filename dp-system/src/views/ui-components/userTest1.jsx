@@ -1,13 +1,23 @@
 import React from 'react';
+
 import {
     Badge,
-    Button,
     Card,
+    CardImg,
+    CardText,
     CardBody,
     CardTitle,
+    CardSubtitle,
+    CardGroup,
+    Button,
     Row,
     Col
 } from 'reactstrap';
+
+import img4 from '../../assets/images/big/img4.jpg';
+import img5 from '../../assets/images/big/img5.jpg';
+import img6 from '../../assets/images/big/img6.jpg';
+
 class UserTest1 extends React.Component {
 
     render() {
@@ -32,9 +42,9 @@ class UserTest1 extends React.Component {
                         </CardBody>
                         <CardBody className="border-top">
                             <div>
-                                <h2>Assignment<Badge color="secondary"></Badge></h2>
+                                <h2>Assignment Instructions<Badge color="secondary"></Badge></h2>
 
-                                <h6>You are trying to book a hotel room through a website. <Badge color="secondary"></Badge></h6>
+                                <h6>Imagine that you are going to travel and need to book a hotel room, you have decided to this through a hotel website that can offer a room for the best price. <Badge color="secondary"></Badge></h6>
                             </div>
                         </CardBody>
                     </Card>
@@ -46,139 +56,52 @@ class UserTest1 extends React.Component {
                     <Card>
                         <CardBody>
                             <CardTitle className="mb-0">
-                                <i className="mdi mdi-arrange-send-backward mr-2"> </i>User Test 1
+                                <i className="mdi mdi-arrange-send-backward mr-2"> </i>You have searched for hotel rooms by the french riviera on a specific date and time.
                                 </CardTitle>
                         </CardBody>
                         <CardBody className="border-top">
                             <div>
-                                <h2>Assignment<Badge color="secondary"></Badge></h2>
+                                <h2>Below are your results and options.<Badge color="secondary"></Badge></h2>
 
-                                <h6>You are trying to book a hotel room through a website. <Badge color="secondary"></Badge></h6>
-                            </div>
-                        </CardBody>
-                    </Card>
-                    {/*--------------------------------------------------------------------------------*/}
-                    {/*Card-2*/}
-                    {/*--------------------------------------------------------------------------------*/}
-                    <Card>
-                        <CardBody>
-                            <CardTitle className="mb-0">
-                                <i className="mdi mdi-arrange-send-backward mr-2"> </i>User Test 1
-                                          </CardTitle>
-                        </CardBody>
-                        <CardBody className="border-top">
-                            <div>
-                                <h2>Assignment<Badge color="secondary"></Badge></h2>
-
-                                <h6>You are trying to book a hotel room through a website. <Badge color="secondary"></Badge></h6>
+                                <h6>You are now trying to book a hotel room through the website. <Badge color="secondary"></Badge></h6>
                             </div>
                         </CardBody>
                     </Card>
                 </Col>
+                {/*--------------------------------------------------------------------------------*/}
+                {/*Card-group*/}
+                {/*--------------------------------------------------------------------------------*/}
                 <Col xs="12" md="12" sm="12">
-                </Col>
-                <Col xs="12" md="12" sm="12">
-                    {/*--------------------------------------------------------------------------------*/}
-                    {/*Card-2*/}
-                    {/*--------------------------------------------------------------------------------*/}
-                    {/* <Card>
-                      <CardBody>
-                        <CardTitle className="mb-0">
-                          <i className = "mdi mdi-arrange-send-backward mr-2"> </i>Badges with Button 
-                        </CardTitle> 
-                      </CardBody>
-                      <CardBody className="border-top">
-                        <div>
-                          <Button color="primary" outline>
-                            Notifications <Badge color="secondary">1</Badge>
-                          </Button>
-                          <Button color="secondary" className="ml-3" outline>
-                            Notifications <Badge color="secondary">2</Badge>
-                          </Button>
-                          <Button color="info" className="ml-3" outline>
-                            Notifications <Badge color="secondary">3</Badge>
-                          </Button>
-                          <Button color="warning" className="ml-3" outline>
-                            Notifications <Badge color="secondary">4</Badge>
-                          </Button>
-                          <Button color="danger" className="ml-3" outline>
-                            Notifications <Badge color="secondary">5</Badge>
-                          </Button>
-                        </div> 
-                      </CardBody>
-                    </Card>
-                  </Col>
-                  <Col xs="12" md="6"> */}
-                    {/*--------------------------------------------------------------------------------*/}
-                    {/*Card-3*/}
-                    {/*--------------------------------------------------------------------------------*/}
-                    {/*<Card>
-                      <CardBody>
-                        <CardTitle className="mb-0">
-                          <i className = "mdi mdi-arrange-send-backward mr-2"> </i>Badges with Contextual variations 
-                        </CardTitle> 
-                      </CardBody>
-                      <CardBody className="border-top">
-                        <div>
-                          <Badge color="primary">Primary</Badge>
-                          <Badge color="secondary" className="ml-3">Secondary</Badge>
-                          <Badge color="success" className="ml-3">Success</Badge>
-                          <Badge color="danger" className="ml-3">Danger</Badge>
-                          <Badge color="warning" className="ml-3">Warning</Badge>
-                          <Badge color="info" className="ml-3">Info</Badge>
-                          <Badge color="light" className="ml-3">Light</Badge>
-                          <Badge color="dark" className="ml-3">Dark</Badge>
-                        </div> 
-                      </CardBody>
-                    </Card>
-                  </Col>
-                  <Col xs="12" md="6">*/}
-                    {/*--------------------------------------------------------------------------------*/}
-                    {/*Card-4*/}
-                    {/*--------------------------------------------------------------------------------*/}
-                    {/*<Card>
-                      <CardBody className="border-top">
-                        <CardTitle className="mb-0">
-                          <i className = "mdi mdi-arrange-send-backward mr-2"> </i>Badges with Pills 
-                        </CardTitle> 
-                      </CardBody>
-                      <CardBody className="border-top">
-                        <div>
-                          <Badge color="primary" pill>Primary</Badge>
-                          <Badge color="secondary" className="ml-3" pill>Secondary</Badge>
-                          <Badge color="success" className="ml-3" pill>Success</Badge>
-                          <Badge color="danger" className="ml-3" pill>Danger</Badge>
-                          <Badge color="warning" className="ml-3" pill>Warning</Badge>
-                          <Badge color="info" className="ml-3" pill>Info</Badge>
-                          <Badge color="light" className="ml-3" pill>Light</Badge>
-                          <Badge color="dark" className="ml-3" pill>Dark</Badge>
-                        </div> 
-                      </CardBody>
-                    </Card>
-                  </Col>
-                  <Col xs="12" md="6">*/}
-                    {/*--------------------------------------------------------------------------------*/}
-                    {/*Card-5*/}
-                    {/*--------------------------------------------------------------------------------*/}
-                    {/*<Card>
-                        <CardBody className="border-top">
-                          <CardTitle className="mb-0">
-                            <i className = "mdi mdi-arrange-send-backward mr-2"> </i>Badges with Links 
-                          </CardTitle> 
-                        </CardBody>
-                        <CardBody className="border-top">
-                          <div>
-                            <Badge href="" color="primary">Primary</Badge>
-                            <Badge href="" color="secondary" className="ml-3">Secondary</Badge>
-                            <Badge href="" color="success" className="ml-3">Success</Badge>
-                            <Badge href="" color="danger" className="ml-3">Danger</Badge>
-                            <Badge href="" color="warning" className="ml-3">Warning</Badge>
-                            <Badge href="" color="info" className="ml-3">Info</Badge>
-                            <Badge href="" color="light" className="ml-3">Light</Badge>
-                            <Badge href="" color="dark" className="ml-3">Dark</Badge>
-                          </div> 
-                        </CardBody>
-                      </Card> */}
+                    <h5 className="mb-3">Search results</h5>
+                    <CardGroup>
+                        <Card>
+                            <CardImg top width="100%" src={img4} alt="Card image cap" />
+                            <CardBody>
+                                <CardTitle>Hotel room close to city center</CardTitle>
+                                <CardSubtitle>Card subtitle</CardSubtitle>
+                                <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+                                <Button>Book now before the hotell gets full</Button>
+                            </CardBody>
+                        </Card>
+                        <Card>
+                            <CardImg top width="100%" src={img5} alt="Card image cap" />
+                            <CardBody>
+                                <CardTitle>Hotel room with a view over the ocean</CardTitle>
+                                <CardSubtitle>Card subtitle</CardSubtitle>
+                                <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
+                                <Button>Book hotel room</Button>
+                            </CardBody>
+                        </Card>
+                        <Card>
+                            <CardImg top width="100%" src={img6} alt="Card image cap" />
+                            <CardBody>
+                                <CardTitle>Hotel room with nature, forest and hiking routes</CardTitle>
+                                <CardSubtitle>Card subtitle</CardSubtitle>
+                                <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
+                                <Button>Continue to book room</Button>
+                            </CardBody>
+                        </Card>
+                    </CardGroup>
                 </Col>
             </Row>
             {/*--------------------------------------------------------------------------------*/}
