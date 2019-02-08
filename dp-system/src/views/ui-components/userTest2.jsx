@@ -9,6 +9,7 @@ import {
     CardBody,
     CardTitle,
     CardSubtitle,
+    CardImgOverlay,
     CardGroup,
     Button,
     Row,
@@ -21,6 +22,9 @@ import img3 from '../../assets/images/big/img3.jpg';
 import img4 from '../../assets/images/big/img4.jpg';
 import img5 from '../../assets/images/big/img5.jpg';
 import img6 from '../../assets/images/big/img6.jpg';
+import img7 from '../../assets/images/background/weatherbg.jpg';
+import { HotelRoomStatistics } from 'components/dashboard-components';
+
 
 class UserTest2 extends React.Component {
 
@@ -52,7 +56,7 @@ class UserTest2 extends React.Component {
                             </div>
                         </CardBody>
                     </Card>
-                </Col>
+                </Col>  
                 <Col xs="12" md="12" sm="12">
                     {/*--------------------------------------------------------------------------------*/}
                     {/*Card-2*/}
@@ -71,6 +75,9 @@ class UserTest2 extends React.Component {
                             </div>
                         </CardBody>
                     </Card>
+                </Col>
+                <Col sm={6} lg={8}>
+                    <HotelRoomStatistics />
                 </Col>
                 {/*--------------------------------------------------------------------------------*/}
                 {/*Card-group-1*/}
@@ -117,6 +124,7 @@ class UserTest2 extends React.Component {
                         <Button color="warning">Proceed to see what room it was</Button>
                     </Card>
                 </Col>
+                
                 {/*--------------------------------------------------------------------------------*/}
                 {/*Card-group-2*/}
                 {/*--------------------------------------------------------------------------------*/}
@@ -150,6 +158,21 @@ class UserTest2 extends React.Component {
                             </CardBody>
                         </Card>
                     </CardGroup>
+                </Col>
+                <Col xs="12" md="6">
+                    {/*--------------------------------------------------------------------------------*/}
+                    {/*Card-1*/}
+                    {/*--------------------------------------------------------------------------------*/}
+                    <Card inverse>
+                        <CardImg width="100%" src={img7} alt="Card image cap" />
+                        <CardImgOverlay>
+                            <CardTitle>High Demand</CardTitle>
+                            <CardText>There is curently a higher then normal demand of hotel rooms in the area you are searching. Beware so that the room you are looking for does not get fully booked.</CardText>
+                            <CardText>
+                                <small className="text-muted">Last updated 3 mins ago</small>
+                            </CardText>
+                        </CardImgOverlay>
+                    </Card>
                 </Col>
             </Row>
             {/*--------------------------------------------------------------------------------*/}
