@@ -10,7 +10,7 @@ import PopoverComponent from '../views/ui-components/popover.jsx';
 import TooltipComponent from '../views/ui-components/tooltip.jsx';
 
 import UserTest1 from '../views/ui-components/userTest1.jsx';
-
+import UserTest2 from '../views/ui-components/userTest2.jsx';
 
 var ThemeRoutes = [
   {
@@ -23,7 +23,7 @@ var ThemeRoutes = [
     path: '/userTest2',
     name: 'User Test 2',
     icon: 'mdi mdi-comment-processing-outline',
-    component: Alerts
+    component: UserTest2
   },
   {
     path: '/questionSheet',

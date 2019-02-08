@@ -22,7 +22,7 @@ import img4 from '../../assets/images/big/img4.jpg';
 import img5 from '../../assets/images/big/img5.jpg';
 import img6 from '../../assets/images/big/img6.jpg';
 
-class UserTest1 extends React.Component {
+class UserTest2 extends React.Component {
 
     render() {
         return <div>
@@ -107,6 +107,16 @@ class UserTest1 extends React.Component {
                         </Card>
                     </CardGroup>
                 </Col>
+                <Col xs="12" md="4">
+                    {/*--------------------------------------------------------------------------------*/}
+                    {/*Card-1*/}
+                    {/*--------------------------------------------------------------------------------*/}
+                    <Card body outline color="warning" className="border">
+                        <CardTitle>Don't miss your chance</CardTitle>
+                        <CardText>A hotel room was just booked at one of the option you are looking at.</CardText>
+                        <Button color="warning">Proceed to see what room it was</Button>
+                    </Card>
+                </Col>
                 {/*--------------------------------------------------------------------------------*/}
                 {/*Card-group-2*/}
                 {/*--------------------------------------------------------------------------------*/}
@@ -153,6 +163,6 @@ class UserTest1 extends React.Component {
     }
 }
 
-export default UserTest1;
+export default UserTest2;
 
 
