@@ -39,7 +39,7 @@ class HotelRoomStatistics extends React.Component {
                     <div className="d-flex align-items-center">
                         <div>
                             <CardTitle>Hotel Room Statistics</CardTitle>
-                            <CardSubtitle>summary of bookings the last hour</CardSubtitle>
+                            <CardSubtitle>summary of bookings the last 8 hours</CardSubtitle>
                         </div>
                         <div className="ml-auto d-flex align-items-center">
                             <ul className="list-inline font-12 dl mr-3 mb-0">

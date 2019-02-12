@@ -11,6 +11,7 @@ import TooltipComponent from '../views/ui-components/tooltip.jsx';
 
 import UserTest1 from '../views/ui-components/userTest1.jsx';
 import UserTest2 from '../views/ui-components/userTest2.jsx';
+import UserTest2point1 from '../views/ui-components/userTest2point1.jsx';
 
 var ThemeRoutes = [
   {
@@ -24,6 +25,12 @@ var ThemeRoutes = [
     name: 'User Test 2',
     icon: 'mdi mdi-comment-processing-outline',
     component: UserTest2
+  },
+  {
+    path: '/userTest2point1',
+    name: 'User Test 2.1',
+    icon: 'mdi mdi-comment-processing-outline',
+    component: UserTest2point1
   },
   {
     path: '/questionSheet',
