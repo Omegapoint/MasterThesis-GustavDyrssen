@@ -5,6 +5,12 @@ import img2 from 'assets/images/users/2.jpg';
 import img3 from 'assets/images/users/3.jpg';
 import img4 from 'assets/images/users/4.jpg';
 
+import hilton from 'assets/images/hilton.png';
+import radissonblu from 'assets/images/radissonblu.png';
+import marriott from 'assets/images/marriott.png';
+import sheraton from 'assets/images/sheraton.png';
+
+
 import {
     Card,
     CardBody,
@@ -93,7 +99,7 @@ class HotelRoomComponent extends React.Component {
                             <tr>
                                 <td>
                                     <div className="d-flex no-block align-items-center">
-                                        <div className="mr-2"><img src={img1} alt="user" className="rounded-circle" width="45" /></div>
+                                        <div className="mr-2"><img src={radissonblu} alt="user" className="rounded-circle" width="45" /></div>
                                         <div className="">
                                             <h5 className="mb-0 font-16 font-medium">Radisson Blu</h5><span>radisson@blu.com</span></div>
                                     </div>
@@ -112,12 +118,12 @@ class HotelRoomComponent extends React.Component {
                             <tr>
                                 <td>
                                     <div className="d-flex no-block align-items-center">
-                                        <div className="mr-2"><img src={img2} alt="user" className="rounded-circle" width="45" /></div>
+                                        <div className="mr-2"><img src={hilton} alt="user" className="rounded-circle" width="45" /></div>
                                         <div className="">
-                                            <h5 className="mb-0 font-16 font-medium">Daniel Kristeen</h5><span>Kristeen@gmail.com</span></div>
+                                            <h5 className="mb-0 font-16 font-medium">Hilton Hotel</h5><span>hilton@hotel.com</span></div>
                                     </div>
                                 </td>
-                                <td>Elite Admin</td>
+                                <td>Guldgränd 8, 104 65 Stockholm</td>
 
                                 <td>
                                     <i className="fa fa-circle text-success" id="tlp2"></i>
@@ -131,12 +137,12 @@ class HotelRoomComponent extends React.Component {
                             <tr>
                                 <td>
                                     <div className="d-flex no-block align-items-center">
-                                        <div className="mr-2"><img src={img3} alt="user" className="rounded-circle" width="45" /></div>
+                                        <div className="mr-2"><img src={marriott} alt="user" className="rounded-circle" width="45" /></div>
                                         <div className="">
-                                            <h5 className="mb-0 font-16 font-medium">Julian Josephs</h5><span>Josephs@gmail.com</span></div>
+                                            <h5 className="mb-0 font-16 font-medium">Marriott International</h5><span>marriott@international.com</span></div>
                                     </div>
                                 </td>
-                                <td>Elite Admin</td>
+                                <td>Rålambshovsleden 50, 112 19 Stockholm</td>
 
                                 <td>
                                     <i className="fa fa-circle text-success" id="tlp3"></i>
@@ -150,12 +156,12 @@ class HotelRoomComponent extends React.Component {
                             <tr>
                                 <td>
                                     <div className="d-flex no-block align-items-center">
-                                        <div className="mr-2"><img src={img4} alt="user" className="rounded-circle" width="45" /></div>
+                                        <div className="mr-2"><img src={sheraton} alt="user" className="rounded-circle" width="45" /></div>
                                         <div className="">
-                                            <h5 className="mb-0 font-16 font-medium">Jan Petrovic</h5><span>hgover@gmail.com</span></div>
+                                            <h5 className="mb-0 font-16 font-medium">Sheraton Hotel</h5><span>sheraton@hotel.com</span></div>
                                     </div>
                                 </td>
-                                <td>Elite Admin</td>
+                                <td>Tegelbacken 6, 101 23 Stockholm</td>
 
                                 <td>
                                     <i className="fa fa-circle text-orange" id="tlp4"></i>
