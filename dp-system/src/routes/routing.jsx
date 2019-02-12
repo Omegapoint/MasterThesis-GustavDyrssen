@@ -23,38 +23,38 @@ var ThemeRoutes = [
   {
     path: '/userTest2',
     name: 'User Test 2',
-    icon: 'mdi mdi-comment-processing-outline',
+    icon: 'mdi mdi-arrange-send-backward',
     component: UserTest2
   },
   {
     path: '/userTest2point1',
     name: 'User Test 2.1',
-    icon: 'mdi mdi-comment-processing-outline',
+    icon: 'ti-loop',
     component: UserTest2point1
   },
   {
     path: '/questionSheet',
     name: 'Question Sheet',
-    icon: 'mdi mdi-pencil-circle',
+    icon: 'mdi mdi-priority-high',
     component: Buttons
   },
   {
     path: '/userTest3',
     name: 'User Test 3',
-    icon: 'mdi mdi-comment-processing-outline',
+    icon: 'mdi mdi-credit-card-multiple',
     component: Badges
   },
   {
     path: '/userTest4',
     name: 'User Test 4',
-    icon: 'mdi mdi-comment-processing-outline',
+    icon: 'mdi mdi-apps',
     component: Cards
   },
   {
     path: '/questionSheet2',
     name: 'Question Sheet 2',
     icon: 'mdi mdi-pencil-circle',
-    component: LayoutComponent
+    component: Alerts
   },
   { path: '/', pathTo: '/dashboard', name: 'Dashboard', redirect: true }
 ];
