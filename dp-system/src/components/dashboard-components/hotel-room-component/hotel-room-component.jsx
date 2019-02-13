@@ -122,7 +122,7 @@ class HotelRoomComponent extends React.Component {
                                 <th className="border-0">Location</th>
                                 <th className="border-0">Status</th>
                                 <th className="border-0">Size</th>
-                                <th className="border-0">Rating</th>
+                                <th className="border-0" >Rating</th>
                                 <th className="border-0">Price</th>
                                 <th className="border-0"></th>
                             </tr>
@@ -224,7 +224,7 @@ class HotelRoomComponent extends React.Component {
 
                                 <td>
                                     <i className="fa fa-circle text-orange font-medium" id="tlp5"></i>
-                                    <Tooltip placement="top" isOpen={this.state.tooltipOpen10} target="tlp5" toggle={this.toggle50}>
+                                    <Tooltip placement="top" isOpen={this.state.tooltipOpen50} target="tlp5" toggle={this.toggle50}>
                                         Only 1 room left
                                     </Tooltip>
                                 </td>
@@ -245,7 +245,7 @@ class HotelRoomComponent extends React.Component {
 
                                 <td>
                                     <i className="fa fa-circle text-success" id="tlp6"></i>
-                                    <Tooltip placement="top" isOpen={this.state.tooltipOpen20} target="tlp6" toggle={this.toggle60}>
+                                    <Tooltip placement="top" isOpen={this.state.tooltipOpen60} target="tlp6" toggle={this.toggle60}>
                                         More then 5 avalable rooms left
                                     </Tooltip>
                                 </td>
@@ -266,7 +266,7 @@ class HotelRoomComponent extends React.Component {
 
                                 <td>
                                     <i className="fa fa-circle text-success" id="tlp7"></i>
-                                    <Tooltip placement="top" isOpen={this.state.tooltipOpen30} target="tlp7" toggle={this.toggle70}>
+                                    <Tooltip placement="top" isOpen={this.state.tooltipOpen70} target="tlp7" toggle={this.toggle70}>
                                         More then 5 avalable rooms left
                                     </Tooltip>
                                 </td>
@@ -287,7 +287,7 @@ class HotelRoomComponent extends React.Component {
 
                                 <td>
                                     <i className="fa fa-circle text-orange" id="tlp8"></i>
-                                    <Tooltip placement="top" isOpen={this.state.tooltipOpen40} target="tlp8" toggle={this.toggle80}>
+                                    <Tooltip placement="top" isOpen={this.state.tooltipOpen80} target="tlp8" toggle={this.toggle80}>
                                         Only 1 room left
                                 </Tooltip>
                                 </td>
