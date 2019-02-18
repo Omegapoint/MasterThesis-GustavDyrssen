@@ -10,10 +10,10 @@ import radissonblu from 'assets/images/radissonblu.png';
 import marriott from 'assets/images/marriott.png';
 import sheraton from 'assets/images/sheraton.png';
 
-import hiltonHotelRoom from 'assets/images/hiltonHotelRoom.jpg';
-import radissonBluHotelRoom from 'assets/images/radissonBluHotelRoom.jpg';
-import marriottHotelRoom from 'assets/images/marriottHotelRoom.jpg';
-import sheratonHotelRoom from 'assets/images/sheratonHotelRoom.jpg';
+import hiltonHotelRoomImg from 'assets/images/hiltonHotelRoom.jpg';
+import radissonBluHotelRoomImg from 'assets/images/radissonBluHotelRoom.jpg';
+import marriottHotelRoomImg from 'assets/images/marriottHotelRoom.jpg';
+import sheratonHotelRoomImg from 'assets/images/sheratonHotelRoom.jpg';
 
 import {
     Alert,
@@ -134,7 +134,7 @@ class HotelRoomComponent extends React.Component {
                         </thead>
                         <tbody>
                             <tr>
-                                <td><img src={radissonBluHotelRoom} width="100"/></td>
+                                <td><img src={radissonBluHotelRoomImg} width="100"/></td>
                                 <td>
                                     <div className="d-flex no-block align-items-center">
                                         <div className="mr-2"><img src={radissonblu} alt="user" className="rounded-circle" width="45" /></div>
@@ -155,9 +155,8 @@ class HotelRoomComponent extends React.Component {
                                 <td className="blue-grey-text  text-darken-4 font-medium">$34</td>
                                 <td><Button className="btn" outline color="primary">Book</Button>{' '}</td>
                             </tr>
-                            
                             <tr>
-                                <td>Insert picture</td>
+                                <td><img src={hiltonHotelRoomImg} width="100" /></td>
                                 <td>
                                     <div className="d-flex no-block align-items-center">
                                         <div className="mr-2"><img src={hilton} alt="user" className="rounded-circle" width="45" /></div>
@@ -179,7 +178,7 @@ class HotelRoomComponent extends React.Component {
                                 <td><Button className="btn" outline color="primary">Book</Button>{' '}</td>
                             </tr>
                             <tr>
-                                <td>Insert picture</td>
+                                <td><img src={marriottHotelRoomImg} width="100" /></td>
                                 <td>
                                     <div className="d-flex no-block align-items-center">
                                         <div className="mr-2"><img src={marriott} alt="user" className="rounded-circle" width="45" /></div>
@@ -201,7 +200,7 @@ class HotelRoomComponent extends React.Component {
                                 <td><Button className="btn" outline color="primary">Book</Button>{' '}</td>
                             </tr>
                             <tr>
-                                <td>Insert picture</td>
+                                <td><img src={sheratonHotelRoomImg} width="100" /></td>
                                 <td>
                                     <div className="d-flex no-block align-items-center">
                                         <div className="mr-2"><img src={sheraton} alt="user" className="rounded-circle" width="45" /></div>
@@ -223,7 +222,7 @@ class HotelRoomComponent extends React.Component {
                                 <td><Button className="btn" outline color="primary">Book</Button>{' '}</td>
                             </tr>
                             <tr>
-                                <td>Insert picture</td>
+                                <td><img src={radissonBluHotelRoomImg} width="100" /></td>
                                 <td>
                                     <div className="d-flex no-block align-items-center">
                                         <div className="mr-2"><img src={radissonblu} alt="user" className="rounded-circle" width="45" /></div>
@@ -245,7 +244,7 @@ class HotelRoomComponent extends React.Component {
                                 <td><Button className="btn" outline color="primary">Book</Button>{' '}</td>
                             </tr>
                             <tr>
-                                <td>Insert picture</td>
+                                <td><img src={hiltonHotelRoomImg} width="100" /></td>
                                 <td>
                                     <div className="d-flex no-block align-items-center">
                                         <div className="mr-2"><img src={hilton} alt="user" className="rounded-circle" width="45" /></div>
@@ -267,7 +266,7 @@ class HotelRoomComponent extends React.Component {
                                 <td><Button className="btn" outline color="primary">Book</Button>{' '}</td>
                             </tr>
                             <tr>
-                                <td>Insert picture</td>
+                                <td><img src={marriottHotelRoomImg} width="100" /></td>
                                 <td>
                                     <div className="d-flex no-block align-items-center">
                                         <div className="mr-2"><img src={marriott} alt="user" className="rounded-circle" width="45" /></div>
@@ -289,7 +288,7 @@ class HotelRoomComponent extends React.Component {
                                 <td><Button className="btn" outline color="primary">Book</Button>{' '}</td>
                             </tr>
                             <tr>
-                                <td>Insert picture</td>
+                                <td><img src={sheratonHotelRoomImg} width="100" /></td>
                                 <td>
                                     <div className="d-flex no-block align-items-center">
                                         <div className="mr-2"><img src={sheraton} alt="user" className="rounded-circle" width="45" /></div>

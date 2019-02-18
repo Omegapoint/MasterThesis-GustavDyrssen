@@ -389,9 +389,6 @@ h5, .h5 {
 h6, .h6 {
   font-size: 14px; }
 
-.notbold{
-    font-weight:normal; }
-
 .lead {
   font-size: 1.09375rem;
   font-weight: 300; }
