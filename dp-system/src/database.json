@@ -1,0 +1,35 @@
+
+{ "Hotels": [
+    {
+        "name": "Radisson Blu",
+        "email": "radisson@blu.com",
+        "phoneNumber": "08-506 540 00",
+        "location": "Vasagatan 1, 111 20 Stockholm",
+        "price": 34,
+        "status": "Booked"
+    },
+    {
+        "name": "Hilton Hotel",
+        "email": "hilton@hotel.com",
+        "phoneNumber": "08-517 353 00",        
+        "location": "Guldgränd 8, 104 65 Stockholm",
+        "price": 52,
+        "status": "Avaliable"
+    },
+    {
+        "name": "Marriott International",
+        "email": "marriott@international.com",
+        "phoneNumber": "08-441 31 00",  
+        "location": "Rålambshovsleden 50, 112 19 Stockholm",
+        "price": 26,
+        "status": "Avaliable"
+    },
+    {
+        "name": "Sheraton Hotel",
+        "email": "sheraton@hotel.com",
+        "phoneNumber": "08-412 34 00",
+        "location": "Tegelbacken 6, 101 23 Stockholm",
+        "price": 47,
+        "status": "Booked"
+    }                        
+]}
