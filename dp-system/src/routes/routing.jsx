@@ -55,7 +55,7 @@ var ThemeRoutes = [
     path: '/userTest4',
     name: 'User Test 4',
     icon: 'mdi mdi-apps',
-    component: Cards
+    component: PaginationComponent
   },
   {
     path: '/questionSheet2',

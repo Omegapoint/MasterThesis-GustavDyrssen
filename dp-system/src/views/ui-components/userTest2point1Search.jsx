@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-    Button,
     Container,
     Col,
     Row,
@@ -21,36 +20,36 @@ class LayoutComponent extends React.Component {
             {/*--------------------------------------------------------------------------------*/}
             <Card>
                 <CardBody>
-                    <CardTitle className="mb-0"><i className="mdi mdi-apps mr-2"> </i>Search options</CardTitle>
+                    <CardTitle className="mb-0"><i className="mdi mdi-apps mr-2"> </i>Grid Layout</CardTitle>
                 </CardBody>
                 <CardBody className="border-top">
                     <Container>
                         <Row>
                             <Col>
                                 <div className="bg-light p-2 border">
-                                    .col 1
+                                    .col
                           </div>
                             </Col>
                         </Row>
                         <Row className="mt-3">
                             <Col>
                                 <div className="bg-light p-2 border">
-                                    .col 2
+                                    .col
                           </div>
                             </Col>
                             <Col>
                                 <div className="bg-light p-2 border">
-                                    .col 3
+                                    .col
                           </div>
                             </Col>
                             <Col>
                                 <div className="bg-light p-2 border">
-                                    .col 4
+                                    .col
                           </div>
                             </Col>
                             <Col>
                                 <div className="bg-light p-2 border">
-                                    .col 5
+                                    .col
                           </div>
                             </Col>
                         </Row>
