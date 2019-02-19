@@ -11,7 +11,8 @@ import TooltipComponent from '../views/ui-components/tooltip.jsx';
 
 import UserTest1 from '../views/ui-components/userTest1.jsx';
 import UserTest2 from '../views/ui-components/userTest2.jsx';
-import UserTest2point1 from '../views/ui-components/userTest2point1.jsx';
+import UserTest2point1Results from '../views/ui-components/userTest2point1Results.jsx';
+import UserTest2point1Search from '../views/ui-components/userTest2point1Search.jsx';
 
 var ThemeRoutes = [
   {
@@ -27,10 +28,16 @@ var ThemeRoutes = [
     component: UserTest2
   },
   {
-    path: '/userTest2point1',
-    name: 'User Test 2.1',
+    path: '/userTest2point1Search',
+    name: 'User Test 2.1 Search',
     icon: 'ti-loop',
-    component: UserTest2point1
+    component: UserTest2point1Search
+  },
+  {
+    path: '/userTest2point1Results',
+    name: 'User Test 2.1 Results',
+    icon: 'ti-loop',
+    component: UserTest2point1Results
   },
   {
     path: '/questionSheet',

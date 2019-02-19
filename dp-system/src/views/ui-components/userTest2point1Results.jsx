@@ -27,7 +27,7 @@ import { HotelRoomStatistics, HotelRoomComponent } from 'components/dashboard-co
 
 
 
-class UserTest2point1 extends React.Component {
+class UserTest2point1Results extends React.Component {
 
     render() {
         return <div>
@@ -112,6 +112,6 @@ class UserTest2point1 extends React.Component {
     }
 }
 
-export default UserTest2point1;
+export default UserTest2point1Results;
 
 

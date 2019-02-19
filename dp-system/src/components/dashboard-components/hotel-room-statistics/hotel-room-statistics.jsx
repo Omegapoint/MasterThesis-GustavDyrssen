@@ -31,7 +31,7 @@ let lineData = {
     }]
 };
 
-class HotelRoomStatistics extends React.Component {
+class HotelRoomStatistics extends React.Component { 
     render() {
         return (
             <Card>
