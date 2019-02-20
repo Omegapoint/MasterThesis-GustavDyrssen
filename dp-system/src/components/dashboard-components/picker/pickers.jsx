@@ -14,9 +14,13 @@ const styles = {
 };
 
 class MaterialUIPickers extends React.Component {
-    state = {
+    checkInstate = {
         // The first commit of Material-UI
-        selectedDate: new Date('2014-08-18T21:11:54'),
+        selectedCheckInDate: new Date(),
+    };
+    checkOutstate = {
+        // The first commit of Material-UI
+        selectedCheckOutDate: new Date('2014-08-18T21:11:54'),
     };
 
     handleDateChange = date => {
@@ -25,21 +29,22 @@ class MaterialUIPickers extends React.Component {
 
     render() {
         const { classes } = this.props;
-        const { selectedDate } = this.state;
+        const { selectedCheckInDate } = this.checkInstate;
+        const { selectedCheckOutDate } = this.checkOutstate;
 
         return (
             <MuiPickersUtilsProvider utils={DateFnsUtils}>
                 <Grid container className={classes.grid} justify="space-around">
                     <DatePicker
                         margin="normal"
-                        label="Date picker"
-                        value={selectedDate}
+                        label="Check In Date"
+                        value={selectedCheckInDate}
                         onChange={this.handleDateChange}
                     />
-                    <TimePicker
+                    <DatePicker
                         margin="normal"
-                        label="Time picker"
-                        value={selectedDate}
+                        label="Check Out Date"
+                        value={selectedCheckOutDate}
                         onChange={this.handleDateChange}
                     />
                 </Grid>

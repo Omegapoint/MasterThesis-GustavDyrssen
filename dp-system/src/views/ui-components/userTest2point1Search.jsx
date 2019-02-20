@@ -9,6 +9,7 @@ import {
 } from 'reactstrap';
 
 import { MaterialUIPickers } from 'components/dashboard-components';
+import { TextFeilds, OutlinedTextFields } from 'components/dashboard-components';
 
 
 class LayoutComponent extends React.Component {
@@ -23,7 +24,7 @@ class LayoutComponent extends React.Component {
             {/*--------------------------------------------------------------------------------*/}
             <Card>
                 <CardBody>
-                    <CardTitle className="mb-0"><i className="mdi mdi-apps mr-2"> </i>Grid Layout</CardTitle>
+                    <CardTitle className="mb-0"><i className="mdi mdi-apps mr-2"> </i>Choose Hotel Room Booking Preferences</CardTitle>
                 </CardBody>
                 <CardBody className="border-top">
                     <Container>
@@ -31,76 +32,19 @@ class LayoutComponent extends React.Component {
                             <Col sm={6} lg={8}>
                                 <MaterialUIPickers />
                             </Col>
-                        </Row>
+                        </Row> 
                         <Row className="mt-3">
-                            <Col xs="3">
-                                <div className="bg-light p-2 border">
-                                    .col-3
-                          </div>
+                            <Col sm={6} lg={8}>
+                                <TextFeilds />
                             </Col>
-                            <Col xs="auto">
-                                <div className="bg-light p-2 border">
-                                    .col-auto - variable width content
-                          </div>
-                            </Col>
-                            <Col xs="3">
-                                <div className="bg-light p-2 border">
-                                    .col-3
-                          </div>
+                            <Col sm={6} lg={8}>
+                                <OutlinedTextFields />
                             </Col>
                         </Row>
                         <Row className="mt-3">
-                            <Col xs="6">
+                            <Col xs="8">
                                 <div className="bg-light p-2 border">
                                     .col-6
-                          </div>
-                            </Col>
-                            <Col xs="6">
-                                <div className="bg-light p-2 border">
-                                    .col-6
-                          </div>
-                            </Col>
-                        </Row>
-                        <Row className="mt-3">
-                            <Col xs="6" sm="4">
-                                <div className="bg-light p-2 border">
-                                    .col-6 .col-sm-4
-                            </div>
-                            </Col>
-                            <Col xs="6" sm="4">
-                                <div className="bg-light p-2 border">
-                                    .col-6 .col-sm-4
-                            </div>
-                            </Col>
-                            <Col sm="4">
-                                <div className="bg-light p-2 border">
-                                    .col-sm-4
-                            </div>
-                            </Col>
-                        </Row>
-                        <Row className="mt-3">
-                            <Col sm={{ size: 6, order: 2, offset: 1 }}>
-                                <div className="bg-light p-2 border">
-                                    .col-sm-6 .col-sm-order-2 .col-sm-offset-2
-                          </div>
-                            </Col>
-                        </Row>
-                        <Row className="mt-3">
-                            <Col sm="12" md={{ size: 8, offset: 2 }}>
-                                <div className="bg-light p-2 border">
-                                    .col-sm-12 .col-md-6 .col-md-offset-3
-                          </div>
-                            </Col>
-                        </Row>
-                        <Row className="mt-3">
-                            <Col sm={{ size: 'auto', offset: 1 }}>
-                                <div className="bg-light p-2 border">
-                                    .col-sm .col-sm-offset-1
-                          </div>
-                            </Col>
-                            <Col sm={{ size: 'auto', offset: 1 }}>
-                                <div className="bg-light p-2 border">
-                                    .col-sm .col-sm-offset-1
                           </div>
                             </Col>
                         </Row>
