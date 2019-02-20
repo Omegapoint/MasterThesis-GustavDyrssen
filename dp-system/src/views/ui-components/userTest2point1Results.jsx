@@ -25,8 +25,6 @@ import img6 from '../../assets/images/big/img6.jpg';
 import img7 from '../../assets/images/background/weatherbg.jpg';
 import { HotelRoomStatistics, HotelRoomComponent } from 'components/dashboard-components';
 
-
-
 class UserTest2point1Results extends React.Component {
 
     render() {

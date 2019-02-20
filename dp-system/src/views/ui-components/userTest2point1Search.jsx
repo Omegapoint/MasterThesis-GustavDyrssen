@@ -8,6 +8,9 @@ import {
     CardTitle
 } from 'reactstrap';
 
+import { MaterialUIPickers } from 'components/dashboard-components';
+
+
 class LayoutComponent extends React.Component {
 
     render() {
@@ -24,33 +27,9 @@ class LayoutComponent extends React.Component {
                 </CardBody>
                 <CardBody className="border-top">
                     <Container>
-                        <Row>
-                            <Col>
-                                <div className="bg-light p-2 border">
-                                    .col
-                          </div>
-                            </Col>
-                        </Row>
                         <Row className="mt-3">
-                            <Col>
-                                <div className="bg-light p-2 border">
-                                    .col
-                          </div>
-                            </Col>
-                            <Col>
-                                <div className="bg-light p-2 border">
-                                    .col
-                          </div>
-                            </Col>
-                            <Col>
-                                <div className="bg-light p-2 border">
-                                    .col
-                          </div>
-                            </Col>
-                            <Col>
-                                <div className="bg-light p-2 border">
-                                    .col
-                          </div>
+                            <Col sm={6} lg={8}>
+                                <MaterialUIPickers />
                             </Col>
                         </Row>
                         <Row className="mt-3">
