@@ -9,7 +9,7 @@ import {
 } from 'reactstrap';
 
 import { MaterialUIPickers } from 'components/dashboard-components';
-import { TextFeilds, OutlinedTextFields } from 'components/dashboard-components';
+import { TextFields, OutlinedTextFields } from 'components/dashboard-components';
 
 
 class LayoutComponent extends React.Component {
@@ -35,17 +35,7 @@ class LayoutComponent extends React.Component {
                         </Row> 
                         <Row className="mt-3">
                             <Col sm={6} lg={8}>
-                                <TextFeilds />
-                            </Col>
-                            <Col sm={6} lg={8}>
-                                <OutlinedTextFields />
-                            </Col>
-                        </Row>
-                        <Row className="mt-3">
-                            <Col xs="8">
-                                <div className="bg-light p-2 border">
-                                    .col-6
-                          </div>
+                                <TextFields />
                             </Col>
                         </Row>
                     </Container>
