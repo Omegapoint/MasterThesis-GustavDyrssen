@@ -13,6 +13,7 @@ import {
     CardBody,
     CardTitle
 } from 'reactstrap';
+import { Button } from '@material-ui/core';
 
 const styles = theme => ({
     container: {
@@ -53,7 +54,7 @@ const currencies = [
 
 class TextFields extends React.Component {
     state = {
-        name: 'Cat in the Hat',
+        name: '',
         age: '',
         multiline: 'Controlled',
         currency: 'EUR',
@@ -69,64 +70,78 @@ class TextFields extends React.Component {
         return (
             <form className={classes.container} noValidate autoComplete="off">
                 <Row>
-                <TextField
-                    id="standard-name"
-                    label="Name"
-                    className={classes.textField}
-                    value={this.state.name}
-                    onChange={this.handleChange('name')}
-                    margin="normal"/>
-                <TextField
-                    id="standard-uncontrolled"
-                    label="Uncontrolled"
-                    defaultValue="foo"
-                    className={classes.textField}
-                    margin="normal"/>
+                    <TextField
+                        id="standard-name"
+                        label="Country"
+                        className={classes.textField}
+                        value={this.state.name}
+                        onChange={this.handleChange('name')}
+                        margin="normal"/>
+                    <TextField
+                        id="standard-name"
+                        label="City"
+                        className={classes.textField}
+                        value={this.state.name}
+                        onChange={this.handleChange('name')}
+                        margin="normal" />
                 </Row>
                 <Row>
-                <TextField
-                    required
-                    id="standard-required"
-                    label="Required"
-                    defaultValue="Hello World"
-                    className={classes.textField}
-                    margin="normal"/>
-                <TextField
-                    disabled
-                    id="standard-disabled"
-                    label="Disabled"
-                    defaultValue="Hello World"
-                    className={classes.textField}
-                    margin="normal"/>
+                    <TextField
+                        id="standard-name"
+                        label="Number of adults"
+                        className={classes.textField}
+                        value={this.state.name}
+                        onChange={this.handleChange('name')}
+                        margin="normal" />
+                    <TextField
+                        id="standard-name"
+                        label="Number of children"
+                        className={classes.textField}
+                        value={this.state.name}
+                        onChange={this.handleChange('name')}
+                        margin="normal" />
                 </Row>
                 <Row>
-                <TextField
-                    id="standard-password-input"
-                    label="Password"
-                    className={classes.textField}
-                    type="password"
-                    autoComplete="current-password"
-                    margin="normal"/>
-                <TextField
-                    id="standard-select-currency"
-                    select
-                    label="Select"
-                    className={classes.textField}
-                    value={this.state.currency}
-                    onChange={this.handleChange('currency')}
-                    SelectProps={{
-                        MenuProps: {
-                            className: classes.menu,
-                        },
-                    }}
-                    helperText="Please select your currency"
-                    margin="normal">
-                    {currencies.map(option => (
-                        <MenuItem key={option.value} value={option.value}>
-                            {option.label}
-                        </MenuItem>
-                    ))}
-                </TextField>
+                    <TextField
+                        id="standard-select-currency"
+                        select
+                        label="Upper price range"
+                        className={classes.textField}
+                        value={this.state.currency}
+                        onChange={this.handleChange('currency')}
+                        SelectProps={{
+                            MenuProps: {
+                                className: classes.menu,
+                            },
+                        }}
+                        helperText="Please select your currency"
+                        margin="normal">
+                        {currencies.map(option => (
+                            <MenuItem key={option.value} value={option.value}>
+                                {option.label}
+                            </MenuItem>
+                        ))}
+                    </TextField>
+                    <TextField
+                        id="standard-select-currency"
+                        select
+                        label="Lower price range"
+                        className={classes.textField}
+                        value={this.state.currency}
+                        onChange={this.handleChange('currency')}
+                        SelectProps={{
+                            MenuProps: {
+                                className: classes.menu,
+                            },
+                        }}
+                        helperText="Please select your currency"
+                        margin="normal">
+                        {currencies.map(option => (
+                            <MenuItem key={option.value} value={option.value}>
+                                {option.label}
+                            </MenuItem>
+                        ))}
+                    </TextField>
                 </Row>
             </form>
         );

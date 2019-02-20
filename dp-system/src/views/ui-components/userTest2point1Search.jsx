@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+    Button,
     Container,
     Col,
     Row,
@@ -37,6 +38,9 @@ class LayoutComponent extends React.Component {
                             <Col sm={6} lg={8}>
                                 <TextFields />
                             </Col>
+                        </Row>
+                        <Row>
+                            <Button className="btn" color="primary" size="lg">Search for available rooms</Button>{' '}
                         </Row>
                     </Container>
                 </CardBody>
