@@ -71,14 +71,15 @@ class TextFields extends React.Component {
             <form className={classes.container} noValidate autoComplete="off">
                 <Row>
                     <TextField
-                        id="standard-name"
+                        id="standard-name1"
                         label="Country"
+                        color="white"
                         className={classes.textField}
                         value={this.state.name}
                         onChange={this.handleChange('name')}
                         margin="normal"/>
                     <TextField
-                        id="standard-name"
+                        id="standard-name2"
                         label="City"
                         className={classes.textField}
                         value={this.state.name}
@@ -87,14 +88,14 @@ class TextFields extends React.Component {
                 </Row>
                 <Row>
                     <TextField
-                        id="standard-name"
+                        id="standard-name3"
                         label="Number of adults"
                         className={classes.textField}
                         value={this.state.name}
                         onChange={this.handleChange('name')}
                         margin="normal" />
                     <TextField
-                        id="standard-name"
+                        id="standard-name4"
                         label="Number of children"
                         className={classes.textField}
                         value={this.state.name}
@@ -103,7 +104,7 @@ class TextFields extends React.Component {
                 </Row>
                 <Row>
                     <TextField
-                        id="standard-select-currency"
+                        id="standard-select-currency1"
                         select
                         label="Upper price range"
                         className={classes.textField}
@@ -123,7 +124,7 @@ class TextFields extends React.Component {
                         ))}
                     </TextField>
                     <TextField
-                        id="standard-select-currency"
+                        id="standard-select-currency2"
                         select
                         label="Lower price range"
                         className={classes.textField}

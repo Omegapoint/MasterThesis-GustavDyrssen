@@ -39,12 +39,7 @@ var ThemeRoutes = [
     icon: 'ti-loop',
     component: UserTest2point1Results
   },
-  {
-    path: '/questionSheet',
-    name: 'Question Sheet',
-    icon: 'mdi mdi-priority-high',
-    component: Buttons
-  },
+  
   {
     path: '/userTest3',
     name: 'User Test 3',
@@ -57,12 +52,7 @@ var ThemeRoutes = [
     icon: 'mdi mdi-apps',
     component: PaginationComponent
   },
-  {
-    path: '/questionSheet2',
-    name: 'Question Sheet 2',
-    icon: 'mdi mdi-pencil-circle',
-    component: Alerts
-  },
+  
   { path: '/', pathTo: '/dashboard', name: 'Dashboard', redirect: true }
 ];
 export default ThemeRoutes;
