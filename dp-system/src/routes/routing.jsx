@@ -16,6 +16,12 @@ import UserTest2point1Search from '../views/ui-components/userTest2point1Search.
 
 var ThemeRoutes = [
   {
+    path: '/dashboard',
+    name: 'Dashboard',
+    icon: 'ti-loop',
+    component: Starter
+  },
+  {
     path: '/userTest1',
     name: 'User Test 1',
     icon: 'mdi mdi-comment-processing-outline',
@@ -30,29 +36,9 @@ var ThemeRoutes = [
   {
     path: '/userTest2point1Search',
     name: 'User Test 2.1 Search',
-    icon: 'ti-loop',
+    icon: 'mdi mdi-toggle-switch',
     component: UserTest2point1Search
   },
-  {
-    path: '/userTest2point1Results',
-    name: 'User Test 2.1 Results',
-    icon: 'ti-loop',
-    component: UserTest2point1Results
-  },
-  
-  {
-    path: '/userTest3',
-    name: 'User Test 3',
-    icon: 'mdi mdi-credit-card-multiple',
-    component: Badges
-  },
-  {
-    path: '/userTest4',
-    name: 'User Test 4',
-    icon: 'mdi mdi-apps',
-    component: PaginationComponent
-  },
-  
   { path: '/', pathTo: '/dashboard', name: 'Dashboard', redirect: true }
 ];
 export default ThemeRoutes;
