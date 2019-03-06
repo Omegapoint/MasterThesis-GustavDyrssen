@@ -84,6 +84,10 @@ class Header extends React.Component {
 					</div>
 					<Collapse className="navbarbg" isOpen={this.state.isOpen} navbar data-navbarbg="skin1" >
 						<Nav className="ml-auto float-right" navbar>
+							<span 
+								className="ml-auto float-right" 
+								style={{ marginTop: '22px', marginRight: '15px', color:'white'}} > Don't touch this toggle switch yet
+							</span>
 							<label className="ml-auto float-right" htmlFor="normal-switch" style={{ marginTop: '18px', marginRight: '15px' }} >
 								<Switch
 									checked={this.state.checked}

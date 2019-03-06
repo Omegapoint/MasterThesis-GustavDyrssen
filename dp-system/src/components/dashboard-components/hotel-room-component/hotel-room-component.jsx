@@ -105,7 +105,7 @@ class HotelRoomComponent extends React.Component {
                 <CardBody>
                     <div className="d-flex align-items-center">
                         <div>
-                            <CardTitle>Room Search</CardTitle>
+                            <CardTitle>Room Search Results</CardTitle>
                             <CardSubtitle>Available Rooms</CardSubtitle>
                         </div>
                         <div className="ml-auto d-flex no-block align-items-center">

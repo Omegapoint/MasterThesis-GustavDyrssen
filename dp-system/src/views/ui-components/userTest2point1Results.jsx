@@ -23,7 +23,7 @@ import img4 from '../../assets/images/big/img4.jpg';
 import img5 from '../../assets/images/big/img5.jpg';
 import img6 from '../../assets/images/big/img6.jpg';
 import img7 from '../../assets/images/background/weatherbg.jpg';
-import { HotelRoomStatistics, HotelRoomComponent } from 'components/dashboard-components';
+import { HotelRoomStatistics, HotelRoomComponent, Feeds } from 'components/dashboard-components';
 
 class UserTest2point1Results extends React.Component {
 
@@ -37,31 +37,9 @@ class UserTest2point1Results extends React.Component {
             {/*Row*/}
             {/*--------------------------------------------------------------------------------*/}
             <Row>
-                <Col xs="12" md="12" sm="12">
-                    {/*--------------------------------------------------------------------------------*/}
-                    {/*Card-1*/}
-                    {/*--------------------------------------------------------------------------------*/}
-                    <Card>
-                        <CardBody>
-                            <CardTitle className="mb-0">
-                                <i className="mdi mdi-arrange-send-backward mr-2"> </i>User Test 1
-                        </CardTitle>
-                        </CardBody>
-                        <CardBody className="border-top">
-                            <div>
-                                <h2>Assignment Instructions<Badge color="secondary"></Badge></h2>
-
-                                <h6>Imagine that you are going to travel and need to book a hotel room, you have decided to this through a hotel website that can offer a room for the best price. <Badge color="secondary"></Badge></h6>
-                            </div>
-                        </CardBody>
-                    </Card>
-                </Col>
-                <Col xs="12" md="6">
-                    {/*--------------------------------------------------------------------------------*/}
-                    {/*Card-1*/}
-                    {/*--------------------------------------------------------------------------------*/}
+                <Col sm={6} lg={8}>
                     <Card inverse>
-                        <CardImg width="100%" src={img7} alt="Card image cap" />
+                        <CardImg width="50%" src={img7} alt="Card image cap" />
                         <CardImgOverlay>
                             <CardTitle>High Demand</CardTitle>
                             <CardText>There is curently a higher then normal demand of hotel rooms in the area you are searching. Beware so that the room you are looking for does not get fully booked.</CardText>
@@ -77,6 +55,8 @@ class UserTest2point1Results extends React.Component {
                 <Col sm={6} lg={8}>
                     <HotelRoomStatistics />
                 </Col>
+                </Row>
+                <Row>
                 {/*--------------------------------------------------------------------------------*/}
                 {/*Card-group-1*/}
                 {/*--------------------------------------------------------------------------------*/}

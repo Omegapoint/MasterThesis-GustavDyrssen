@@ -2,6 +2,7 @@ import React from 'react';
 
 import {
     Button,
+    Badge,
     Container,
     Col,
     Row,
@@ -22,7 +23,6 @@ import {
 import img5 from '../../assets/images/big/img5.jpg';
 import { MaterialUIPickers } from 'components/dashboard-components';
 import { TextFields } from 'components/dashboard-components';
-import Switch from "react-switch";
 
 class LayoutComponent extends React.Component {
     constructor() {
@@ -40,6 +40,25 @@ class LayoutComponent extends React.Component {
             {/*--------------------------------------------------------------------------------*/}
             {/*Start Inner Div*/}
             {/*--------------------------------------------------------------------------------*/}
+            <Col xs="12" md="12" sm="12">
+                {/*--------------------------------------------------------------------------------*/}
+                {/*Card-1*/}
+                {/*--------------------------------------------------------------------------------*/}
+                <Card>
+                    <CardBody>
+                        <CardTitle className="mb-0">
+                            <i className="mdi mdi-arrange-send-backward mr-2"> </i>User Test 1
+                        </CardTitle>
+                    </CardBody>
+                    <CardBody className="border-top">
+                        <div>
+                            <h2>Assignment Instructions<Badge color="secondary"></Badge></h2>
+
+                            <h6>Imagine that you are going to travel and need to book a hotel room, you have decided to this through a hotel website that can offer a room for the best price. <Badge color="secondary"></Badge></h6>
+                        </div>
+                    </CardBody>
+                </Card>
+            </Col>
             {/*--------------------------------------------------------------------------------*/}
             {/*Row*/}
             {/*--------------------------------------------------------------------------------*/}
@@ -62,7 +81,7 @@ class LayoutComponent extends React.Component {
                             </Col>
                         </Row>
                             <NavLink to="/userTest2point1Results">
-                                <Button className="btn" color="primary" size="lg">Search for available rooms</Button>{' '}
+                                <Button className="btn" color="primary" size="lg" style={{ marginTop: '15px' }} >Search for available rooms</Button>{' '}
                             </NavLink>
                     </Container>
                 </CardBody>
