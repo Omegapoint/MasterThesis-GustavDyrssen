@@ -62,6 +62,7 @@ class LayoutComponent extends React.Component {
             {/*--------------------------------------------------------------------------------*/}
             {/*Row*/}
             {/*--------------------------------------------------------------------------------*/}
+            <Col xs="12" md="12" sm="12" >
             <Card inverse>
                 <CardImg width="100%" src={img5} alt="Card image cap" />
                 <CardImgOverlay>
@@ -87,6 +88,7 @@ class LayoutComponent extends React.Component {
                 </CardBody>
                 </CardImgOverlay> 
             </Card>
+            </Col>
         </div>
     }
 }

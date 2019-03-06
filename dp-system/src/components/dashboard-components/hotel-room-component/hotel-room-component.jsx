@@ -27,6 +27,12 @@ import {
     Tooltip
 } from 'reactstrap';
 
+import {
+    Route,
+    NavLink,
+    HashRouter
+} from "react-router-dom";
+
 class HotelRoomComponent extends React.Component {
     constructor(props) {
         super(props);
@@ -153,7 +159,11 @@ class HotelRoomComponent extends React.Component {
                                 <td>2 bed room</td>
                                 <td><Alert color="success">8.7</Alert></td>
                                 <td className="blue-grey-text  text-darken-4 font-medium">$34</td>
-                                <td><Button className="btn" outline color="primary">Book</Button>{' '}</td>
+                                <td>
+                                    <NavLink to="/userTest2point1BookRoom">
+                                        <Button className="btn" outline color="primary">Book</Button>{' '}
+                                    </NavLink>
+                                </td>
                             </tr>
                             <tr>
                                 <td><img src={hiltonHotelRoomImg} width="100" /></td>
@@ -175,7 +185,11 @@ class HotelRoomComponent extends React.Component {
                                 <td>1 bed room</td>
                                 <td><Alert color="warning">4.3</Alert></td>
                                 <td className="blue-grey-text  text-darken-4 font-medium">$52</td>
-                                <td><Button className="btn" outline color="primary">Book</Button>{' '}</td>
+                                <td>
+                                    <NavLink to="/userTest2point1BookRoom">
+                                        <Button className="btn" outline color="primary">Book</Button>{' '}
+                                    </NavLink>
+                                </td>
                             </tr>
                             <tr>
                                 <td><img src={marriottHotelRoomImg} width="100" /></td>
@@ -197,7 +211,11 @@ class HotelRoomComponent extends React.Component {
                                 <td>3 bed room</td>
                                 <td><Alert color="danger">2.1</Alert></td>
                                 <td className="blue-grey-text  text-darken-4 font-medium">$26</td>
-                                <td><Button className="btn" outline color="primary">Book</Button>{' '}</td>
+                                <td>
+                                    <NavLink to="/userTest2point1BookRoom">
+                                        <Button className="btn" outline color="primary">Book</Button>{' '}
+                                    </NavLink>
+                                </td>
                             </tr>
                             <tr>
                                 <td><img src={sheratonHotelRoomImg} width="100" /></td>
@@ -219,7 +237,11 @@ class HotelRoomComponent extends React.Component {
                                 <td>2 bed room</td>
                                 <td><Alert color="info">5.7</Alert></td>
                                 <td className="blue-grey-text  text-darken-4 font-medium">$47</td>
-                                <td><Button className="btn" outline color="primary">Book</Button>{' '}</td>
+                                <td>
+                                    <NavLink to="/userTest2point1BookRoom">
+                                        <Button className="btn" outline color="primary">Book</Button>{' '}
+                                    </NavLink>
+                                </td>
                             </tr>
                             <tr>
                                 <td><img src={radissonBluHotelRoomImg} width="100" /></td>
@@ -241,7 +263,11 @@ class HotelRoomComponent extends React.Component {
                                 <td>2 bed room</td>
                                 <td><Alert color="success">7.9</Alert></td>
                                 <td className="blue-grey-text  text-darken-4 font-medium">$34</td>
-                                <td><Button className="btn" outline color="primary">Book</Button>{' '}</td>
+                                <td>
+                                    <NavLink to="/userTest2point1BookRoom">
+                                        <Button className="btn" outline color="primary">Book</Button>{' '}
+                                    </NavLink>
+                                </td>
                             </tr>
                             <tr>
                                 <td><img src={hiltonHotelRoomImg} width="100" /></td>
@@ -263,7 +289,11 @@ class HotelRoomComponent extends React.Component {
                                 <td>1 bed room</td>
                                 <td><Alert color="success">9.0</Alert></td>
                                 <td className="blue-grey-text  text-darken-4 font-medium">$52</td>
-                                <td><Button className="btn" outline color="primary">Book</Button>{' '}</td>
+                                <td>
+                                    <NavLink to="/userTest2point1BookRoom">
+                                        <Button className="btn" outline color="primary">Book</Button>{' '}
+                                    </NavLink>
+                                </td>
                             </tr>
                             <tr>
                                 <td><img src={marriottHotelRoomImg} width="100" /></td>
@@ -285,7 +315,11 @@ class HotelRoomComponent extends React.Component {
                                 <td>3 bed room</td>
                                 <td><Alert color="warning">3.5</Alert></td>
                                 <td className="blue-grey-text  text-darken-4 font-medium">$26</td>
-                                <td><Button className="btn" outline color="primary">Book</Button>{' '}</td>
+                                <td>
+                                    <NavLink to="/userTest2point1BookRoom">
+                                        <Button className="btn" outline color="primary">Book</Button>{' '}
+                                    </NavLink>
+                                </td>
                             </tr>
                             <tr>
                                 <td><img src={sheratonHotelRoomImg} width="100" /></td>
@@ -307,7 +341,11 @@ class HotelRoomComponent extends React.Component {
                                 <td>2 bed room</td>
                                 <td><Alert color="info">6.2</Alert></td>
                                 <td className="blue-grey-text  text-darken-4 font-medium">$47</td>
-                                <td><Button className="btn" outline color="primary">Book</Button>{' '}</td>
+                                <td>
+                                    <NavLink to="/userTest2point1BookRoom">
+                                        <Button className="btn" outline color="primary">Book</Button>{' '}
+                                    </NavLink>
+                                </td>
                             </tr>
                         </tbody>
                     </Table>
