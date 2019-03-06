@@ -39,6 +39,12 @@ var ThemeRoutes = [
     icon: 'mdi mdi-toggle-switch',
     component: UserTest2point1Search
   },
+  {
+    path: '/userTest2point1Results',
+    name: 'User Test 2.1 Results',
+    icon: 'mdi mdi-toggle-switch',
+    component: UserTest2point1Results
+  },
   { path: '/', pathTo: '/dashboard', name: 'Dashboard', redirect: true }
 ];
 export default ThemeRoutes;

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
     Button,
     Container,
@@ -21,10 +22,18 @@ import {
 import img5 from '../../assets/images/big/img5.jpg';
 import { MaterialUIPickers } from 'components/dashboard-components';
 import { TextFields } from 'components/dashboard-components';
-import userTest2point1Results from './userTest2point1Results';
-
+import Switch from "react-switch";
 
 class LayoutComponent extends React.Component {
+    constructor() {
+        super();
+        this.state = { checked: false };
+        this.handleChange = this.handleChange.bind(this);
+    }
+
+    handleChange(checked) {
+        this.setState({ checked });
+    }
 
     render() {
         return <div>
@@ -45,18 +54,16 @@ class LayoutComponent extends React.Component {
                         <Row className="mt-3">
                             <Col sm={6} lg={8}>
                                 <MaterialUIPickers />
-                            </Col>
+                            </Col> 
                         </Row> 
                         <Row className="mt-3">
                             <Col sm={6} lg={8}>
                                 <TextFields />
                             </Col>
                         </Row>
-                            <HashRouter>
-                                <NavLink to="/userTest2point1Results">
-                                    <Button className="btn" color="primary" size="lg">Search for available rooms</Button>{' '}
-                                </NavLink>
-                            </HashRouter>
+                            <NavLink to="/userTest2point1Results">
+                                <Button className="btn" color="primary" size="lg">Search for available rooms</Button>{' '}
+                            </NavLink>
                     </Container>
                 </CardBody>
                 </CardImgOverlay> 

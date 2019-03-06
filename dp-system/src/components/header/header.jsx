@@ -24,16 +24,22 @@ import logolighttext from '../../assets/images/logo-light-text.png';
 
 import opText from '../../assets/images/omegapoint2.png';
 import opLogo from '../../assets/images/omegapoint2.png';
-
+import Switch from "react-switch";
 
 class Header extends React.Component {
 	constructor(props) {
 		super(props);
 		this.toggle = this.toggle.bind(this);
 		this.showMobilemenu = this.showMobilemenu.bind(this);
+		this.state = { checked: false };
+		this.handleChange = this.handleChange.bind(this);
 		this.state = {
 			isOpen: false
 		};
+	}
+
+	handleChange(checked) {
+		this.setState({ checked });
 	}
 	/*--------------------------------------------------------------------------------*/
 	/*To open NAVBAR in MOBILE VIEW                                                   */
@@ -78,6 +84,23 @@ class Header extends React.Component {
 					</div>
 					<Collapse className="navbarbg" isOpen={this.state.isOpen} navbar data-navbarbg="skin1" >
 						<Nav className="ml-auto float-right" navbar>
+							<label className="ml-auto float-right" htmlFor="normal-switch" style={{ marginTop: '18px', marginRight: '15px' }} >
+								<Switch
+									checked={this.state.checked}
+									onChange={this.handleChange}
+									onColor="#86d3ff"
+									onHandleColor="#2693e6"
+									handleDiameter={30}
+									uncheckedIcon={false}
+									checkedIcon={false}
+									boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
+									activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
+									height={20}
+									width={48}
+									className="react-switch"
+									id="material-switch"
+								/>
+							</label>
 							<NavItem>
 								<a href="" className="btn btn-danger mr-2" style={{ marginTop: '15px' }}>Dark Pattern User Test System</a>
 							</NavItem>
