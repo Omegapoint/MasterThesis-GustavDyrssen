@@ -16,12 +16,6 @@ import {
     Col
 } from 'reactstrap';
 
-import {
-    Route,
-    NavLink,
-    HashRouter
-} from "react-router-dom";
-
 import img1 from '../../assets/images/big/img1.jpg';
 import img2 from '../../assets/images/big/img2.jpg';
 import img3 from '../../assets/images/big/img3.jpg';

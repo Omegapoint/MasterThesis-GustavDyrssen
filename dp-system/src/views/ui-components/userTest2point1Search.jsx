@@ -21,7 +21,7 @@ import {
 } from "react-router-dom";
 
 import img5 from '../../assets/images/big/img5.jpg';
-import { MaterialUIPickers } from 'components/dashboard-components';
+import { CheckInPickers, CheckOutPickers } from 'components/dashboard-components';
 import { TextFields } from 'components/dashboard-components';
 
 class LayoutComponent extends React.Component {
@@ -73,8 +73,13 @@ class LayoutComponent extends React.Component {
                     <Container>
                         <Row className="mt-3">
                             <Col sm={6} lg={8}>
-                                <MaterialUIPickers />
+                                <CheckInPickers />
                             </Col> 
+                        </Row> 
+                        <Row className="mt-3">
+                            <Col sm={6} lg={8}>
+                                <CheckOutPickers />
+                            </Col>
                         </Row> 
                         <Row className="mt-3">
                             <Col sm={6} lg={8}>

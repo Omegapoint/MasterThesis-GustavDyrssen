@@ -2,7 +2,6 @@ import 'date-fns';
 import React from 'react';
 import PropTypes from 'prop-types';
 import Grid from '@material-ui/core/Grid';
-import TextField from '@material-ui/core/TextField';
 import { withStyles } from '@material-ui/core/styles';
 import DateFnsUtils from '@date-io/date-fns';
 import { MuiPickersUtilsProvider, TimePicker, DatePicker } from 'material-ui-pickers';
@@ -13,14 +12,10 @@ const styles = {
     },
 };
 
-class MaterialUIPickers extends React.Component {
-    checkInstate = {
+class CheckInPickers extends React.Component {
+    state = {
         // The first commit of Material-UI
-        selectedCheckInDate: new Date(),
-    };
-    checkOutstate = {
-        // The first commit of Material-UI
-        selectedCheckOutDate: new Date('2014-08-18T21:11:54'),
+        selectedDate: new Date('2019-01-01T12:00:00'),
     };
 
     handleDateChange = date => {
@@ -29,22 +24,21 @@ class MaterialUIPickers extends React.Component {
 
     render() {
         const { classes } = this.props;
-        const { selectedCheckInDate } = this.checkInstate;
-        const { selectedCheckOutDate } = this.checkOutstate;
+        const { selectedDate } = this.state;
 
         return (
             <MuiPickersUtilsProvider utils={DateFnsUtils}>
                 <Grid container className={classes.grid} justify="space-around">
                     <DatePicker
                         margin="normal"
-                        label="Check In Date"
-                        value={selectedCheckInDate}
+                        label="Check-In Date"
+                        value={selectedDate}
                         onChange={this.handleDateChange}
                     />
-                    <DatePicker
+                    <TimePicker
                         margin="normal"
-                        label="Check Out Date"
-                        value={selectedCheckOutDate}
+                        label="Check-In Time"
+                        value={selectedDate}
                         onChange={this.handleDateChange}
                     />
                 </Grid>
@@ -53,8 +47,8 @@ class MaterialUIPickers extends React.Component {
     }
 }
 
-MaterialUIPickers.propTypes = {
+CheckInPickers.propTypes = {
     classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(MaterialUIPickers);
+export default withStyles(styles)(CheckInPickers);
