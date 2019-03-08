@@ -15,6 +15,8 @@ import UserTest2point1Results from '../views/ui-components/userTest2point1Result
 import UserTest2point1Search from '../views/ui-components/userTest2point1Search.jsx';
 import UserTest2point1BookRoom from '../views/ui-components/userTest2point1BookRoom.jsx';
 import UserTest2point1Payment from '../views/ui-components/userTest2point1Payment.jsx';
+import UserTest2point1Welcome from '../views/ui-components/userTest2point1Welcome.jsx';
+import UserTest2point1End from '../views/ui-components/userTest2point1End.jsx';
 
 var ThemeRoutes = [
   {
@@ -34,6 +36,12 @@ var ThemeRoutes = [
     name: 'User Test 2',
     icon: 'mdi mdi-arrange-send-backward',
     component: UserTest2
+  },
+  {
+    path: '/userTest2point1Welcome',
+    name: 'User Test 2.1 Welcome',
+    icon: 'mdi mdi-toggle-switch',
+    component: UserTest2point1Welcome
   },
   {
     path: '/userTest2point1Search',
@@ -58,6 +66,12 @@ var ThemeRoutes = [
     name: 'User Test 2.1 Payment',
     icon: 'mdi mdi-toggle-switch',
     component: UserTest2point1Payment
+  },
+  {
+    path: '/userTest2point1End',
+    name: 'User Test 2.1 End',
+    icon: 'mdi mdi-toggle-switch',
+    component: UserTest2point1End
   },
   { path: '/', pathTo: '/dashboard', name: 'Dashboard', redirect: true }
 ];

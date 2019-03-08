@@ -75,7 +75,11 @@ class UserTest2point1BookRoom extends React.Component {
                             </CardBody>
                             <CardBody className="border-top">
                                 <div>
-                                    <h2>Finish your booking <Button className="btn" color="primary" size="lg" >Proceed to payment</Button>{' '}</h2>
+                                <h2>Finish your booking
+                                    <NavLink to="/userTest2point1Payment">
+                                        <Button className="btn" color="primary" size="lg" style={{ marginLeft: '15px' }} >Proceed to payment</Button>{' '}
+                                    </NavLink>
+                                </h2>
                                 </div>
                             </CardBody>
                         </Card>
