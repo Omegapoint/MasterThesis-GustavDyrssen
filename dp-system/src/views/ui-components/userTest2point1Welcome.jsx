@@ -29,12 +29,12 @@ class userTest2point1Welcome extends React.Component {
                         <Card>
                             <CardBody>
                                 <CardTitle className="mb-0">
-                                    <i className="mdi mdi-arrange-send-backward mr-2"> </i>Welcome</CardTitle>
+                                    <i className="mdi mdi-arrange-send-backward mr-2"> </i>Hello!</CardTitle>
                             </CardBody>
                             <CardBody className="border-top">
                                 <div>
-                                    <h2>Hello!</h2>
-                                    <h6>You are about to participate in a user test developed by me, Gustav Dyrssen, to get some results for my master thesis project. I hope you will enjoy this and thank you so much for particiating!</h6>
+                                    <h3>Welcome</h3>
+                                    <h5>You are about to participate in a user test developed by me, Gustav Dyrssen, to get some results for my master thesis project. I hope you will enjoy this and thank you so much for particiating!</h5>
                                 </div>
                             </CardBody>
                         </Card>
@@ -47,9 +47,9 @@ class userTest2point1Welcome extends React.Component {
                             </CardBody>
                             <CardBody className="border-top">
                                 <div>
-                                    <h2>Be sure to read through the instructions thuroughly</h2>
-                                    <h6>Imagine that you are going to travel and need to book a hotel room, you have decided to this through a hotel website that can offer a room for the best price.</h6> 
-                                    <h6>When you feel ready, press the button below to continue.</h6>                        
+                                    <h3>Be sure to read through the instructions thuroughly</h3>
+                                    <h5>Imagine that you are going to travel and need to book a hotel room, you have decided to this through a hotel website that can offer a room for the best price.</h5> 
+                                    <h5>When you feel ready, press the button below to continue.</h5>                        
                                 </div>
                                 <NavLink to="/userTest2point1Search">
                                     <Button className="btn" color="primary" size="lg">Start </Button>{' '}

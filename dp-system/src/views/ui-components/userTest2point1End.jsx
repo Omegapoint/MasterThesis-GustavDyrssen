@@ -33,8 +33,8 @@ class userTest2point1End extends React.Component {
                             </CardBody>
                             <CardBody className="border-top">
                                 <div>
-                                    <h2>You have succesfully managed too book a room <Badge color="secondary"></Badge></h2>
-                                    <h6>Thank you for participating in this user test!</h6>
+                                    <h3>You have succesfully managed too book a room</h3>
+                                    <h5>Thank you for participating in this user test!</h5>
                                 </div>
                             </CardBody>
                         </Card>
@@ -47,7 +47,7 @@ class userTest2point1End extends React.Component {
                             </CardBody>
                             <CardBody className="border-top">
                                 <div>
-                                    <h2>Please answer the questions on the seperate answering sheet</h2>
+                                    <h3>Please answer the questions on the seperate answering sheet</h3>
                                 </div>
                             </CardBody>
                         </Card>

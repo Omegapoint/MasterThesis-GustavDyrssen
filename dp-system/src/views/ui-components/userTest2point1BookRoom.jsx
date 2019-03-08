@@ -47,8 +47,8 @@ class UserTest2point1BookRoom extends React.Component {
                         </CardBody>
                         <CardBody className="border-top">
                             <div>
-                                <h2>Below are your results and options.<Badge color="secondary"></Badge></h2>
-                                <h6>You are now trying to book a hotel room through the website. <Badge color="secondary"></Badge></h6>
+                                <h3>Below are your results and options.</h3>
+                                <h6>You are now trying to book a hotel room through the website.</h6>
                             </div>
                         </CardBody>
                     </Card>
