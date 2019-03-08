@@ -14,6 +14,7 @@ import UserTest2 from '../views/ui-components/userTest2.jsx';
 import UserTest2point1Results from '../views/ui-components/userTest2point1Results.jsx';
 import UserTest2point1Search from '../views/ui-components/userTest2point1Search.jsx';
 import UserTest2point1BookRoom from '../views/ui-components/userTest2point1BookRoom.jsx';
+import UserTest2point1Payment from '../views/ui-components/userTest2point1Payment.jsx';
 
 var ThemeRoutes = [
   {
@@ -51,6 +52,12 @@ var ThemeRoutes = [
     name: 'User Test 2.1 Book Room',
     icon: 'mdi mdi-toggle-switch',
     component: UserTest2point1BookRoom
+  },
+  {
+    path: '/userTest2point1Payment',
+    name: 'User Test 2.1 Payment',
+    icon: 'mdi mdi-toggle-switch',
+    component: UserTest2point1Payment
   },
   { path: '/', pathTo: '/dashboard', name: 'Dashboard', redirect: true }
 ];
