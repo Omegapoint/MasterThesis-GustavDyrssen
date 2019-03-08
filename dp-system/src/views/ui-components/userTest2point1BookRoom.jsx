@@ -7,6 +7,7 @@ import {
     CardImg,
     CardText,
     CardBody,
+    CardLink,
     CardTitle,
     CardSubtitle,
     CardImgOverlay,
@@ -16,6 +17,12 @@ import {
     Col
 } from 'reactstrap';
 
+import {
+    Route,
+    NavLink,
+    HashRouter
+} from "react-router-dom";
+
 import img1 from '../../assets/images/big/img1.jpg';
 import img2 from '../../assets/images/big/img2.jpg';
 import img3 from '../../assets/images/big/img3.jpg';
@@ -24,43 +31,14 @@ import img5 from '../../assets/images/big/img5.jpg';
 import img6 from '../../assets/images/big/img6.jpg';
 import img7 from '../../assets/images/background/weatherbg.jpg';
 import { HotelRoomStatistics } from 'components/dashboard-components';
+import radissonBluHotelRoomImg from 'assets/images/radissonBluHotelRoom.jpg';
 
-
-class UserTest2 extends React.Component {
+class UserTest2point1BookRoom extends React.Component {
 
     render() {
         return <div>
-            {/*--------------------------------------------------------------------------------*/}
-            {/*Start Inner Div*/}
-            {/*--------------------------------------------------------------------------------*/}
-
-            {/*--------------------------------------------------------------------------------*/}
-            {/*Row*/}
-            {/*--------------------------------------------------------------------------------*/}
             <Row>
                 <Col xs="12" md="12" sm="12">
-                    {/*--------------------------------------------------------------------------------*/}
-                    {/*Card-1*/}
-                    {/*--------------------------------------------------------------------------------*/}
-                    <Card>
-                        <CardBody>
-                            <CardTitle className="mb-0">
-                                <i className="mdi mdi-arrange-send-backward mr-2"> </i>User Test 1
-                        </CardTitle>
-                        </CardBody>
-                        <CardBody className="border-top">
-                            <div>
-                                <h2>Assignment Instructions<Badge color="secondary"></Badge></h2>
-
-                                <h6>Imagine that you are going to travel and need to book a hotel room, you have decided to this through a hotel website that can offer a room for the best price. <Badge color="secondary"></Badge></h6>
-                            </div>
-                        </CardBody>
-                    </Card>
-                </Col>
-                <Col xs="12" md="12" sm="12">
-                    {/*--------------------------------------------------------------------------------*/}
-                    {/*Card-2*/}
-                    {/*--------------------------------------------------------------------------------*/}
                     <Card>
                         <CardBody>
                             <CardTitle className="mb-0">
@@ -70,59 +48,46 @@ class UserTest2 extends React.Component {
                         <CardBody className="border-top">
                             <div>
                                 <h2>Below are your results and options.<Badge color="secondary"></Badge></h2>
-
                                 <h6>You are now trying to book a hotel room through the website. <Badge color="secondary"></Badge></h6>
                             </div>
                         </CardBody>
                     </Card>
                 </Col>
-                {/*--------------------------------------------------------------------------------*/}
-                {/*Card-group-1*/}
-                {/*--------------------------------------------------------------------------------*/}
-                <Col xs="12" md="12" sm="12">
-                    <h5 className="mb-3">Search results</h5>
-                    <CardGroup>
+                </Row>
+                <Row>
+                <Col sm="6">
                         <Card>
-                            <CardImg top width="100%" src={img4} alt="Card image cap" />
+                        <CardImg top width="100%" src={radissonBluHotelRoomImg} />
                             <CardBody>
-                                <CardTitle>Hotel room close to city center</CardTitle>
+                                <CardTitle>Card title</CardTitle>
                                 <CardSubtitle>Card subtitle</CardSubtitle>
-                                <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-                                <Button>Book now before the hotel gets full</Button>
+                                <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+                                <Button>Button</Button>
                             </CardBody>
                         </Card>
+                    </Col>
+                <Col sm="6">
                         <Card>
-                            <CardImg top width="100%" src={img5} alt="Card image cap" />
                             <CardBody>
-                                <CardTitle>Hotel room with a view over the ocean</CardTitle>
-                                <CardSubtitle>Card subtitle</CardSubtitle>
-                                <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-                                <Button>Book hotel room</Button>
+                                <CardTitle className="mb-0">
+                                    <i className="mdi mdi-arrange-send-backward mr-2"> </i>Congratulations you have sucessfully chosen a room to book
+                                </CardTitle>
+                            </CardBody>
+                            <CardBody className="border-top">
+                                <div>
+                                    <h2>Finish your booking <Button className="btn" color="primary" size="lg" >Proceed to payment</Button>{' '}</h2>
+                                </div>
                             </CardBody>
                         </Card>
-                        <Card>
-                            <CardImg top width="100%" src={img3} alt="Card image cap" />
-                            <CardBody>
-                                <CardTitle>Hotel room with nature, forest and hiking routes</CardTitle>
-                                <CardSubtitle>Card subtitle</CardSubtitle>
-                                <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
-                                <Button>Continue to book room</Button>
-                            </CardBody>
-                        </Card>
-                    </CardGroup>
-                </Col>
-            </Row>
-            {/*--------------------------------------------------------------------------------*/}
-            {/*Row*/}
-            {/*--------------------------------------------------------------------------------*/}
-
-            {/*--------------------------------------------------------------------------------*/}
-            {/*End Inner Div*/}
-            {/*--------------------------------------------------------------------------------*/}
-        </div>
+                    <Card body outline color="warning" className="border">
+                        <CardTitle>Don't miss your chance</CardTitle>
+                        <CardText>A hotel room was just booked at the hotel option you are looking at.</CardText>
+                        <Button color="warning">Click to see what room it was</Button>
+                    </Card>
+                    </Col>
+                </Row>
+            </div>
     }
 }
 
-export default UserTest2;
-
-
+export default UserTest2point1BookRoom;
