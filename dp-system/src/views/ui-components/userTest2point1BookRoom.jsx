@@ -35,11 +35,18 @@ import radissonBluHotelRoomImg from 'assets/images/radissonBluHotelRoom.jpg';
 
 class UserTest2point1BookRoom extends React.Component {
 
+    constructor(props) {
+        super(props)
+        this.state= {
+            showCard: false
+        }
+    }
+
     render() {
         return <div>
             <Row>
                 <Col xs="12" md="12" sm="12">
-                    <Card>
+                    {this.state.showCard && <Card >
                         <CardBody>
                             <CardTitle className="mb-0">
                                 <i className="mdi mdi-arrange-send-backward mr-2"> </i>You have searched for hotel rooms by the french riviera on a specific date and time.
@@ -51,7 +58,7 @@ class UserTest2point1BookRoom extends React.Component {
                                 <h6>You are now trying to book a hotel room through the website.</h6>
                             </div>
                         </CardBody>
-                    </Card>
+                    </Card>}
                 </Col>
                 </Row>
                 <Row>

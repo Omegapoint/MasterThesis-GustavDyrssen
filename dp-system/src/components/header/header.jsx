@@ -13,10 +13,6 @@ import {
 } from 'reactstrap';
 
 import profilephoto from '../../assets/images/users/1.jpg';
-
-/*--------------------------------------------------------------------------------*/
-/* Import images which are need for the HEADER                                    */
-/*--------------------------------------------------------------------------------*/
 import logodarkicon from '../../assets/images/logo-icon.png';
 import logolighticon from '../../assets/images/logo-light-icon.png';
 import logodarktext from '../../assets/images/logo-text.png';
@@ -37,21 +33,14 @@ class Header extends React.Component {
 			isOpen: false
 		};
 	}
-
 	handleChange(checked) {
 		this.setState({ checked });
 	}
-	/*--------------------------------------------------------------------------------*/
-	/*To open NAVBAR in MOBILE VIEW                                                   */
-	/*--------------------------------------------------------------------------------*/
 	toggle() {
 		this.setState({
 			isOpen: !this.state.isOpen
 		});
 	}
-	/*--------------------------------------------------------------------------------*/
-	/*To open SIDEBAR-MENU in MOBILE VIEW                                             */
-	/*--------------------------------------------------------------------------------*/
 	showMobilemenu() {
 		document.getElementById('main-wrapper').classList.toggle('show-sidebar');
 	}
@@ -61,9 +50,6 @@ class Header extends React.Component {
 			<header className="topbar navbarbg" data-navbarbg="skin1">
 				<Navbar className="top-navbar" dark expand="md">
 					<div className="navbar-header" id="logobg" data-logobg="skin6">
-						{/*--------------------------------------------------------------------------------*/}
-						{/* Logos and Icon goes here for Light Layout && Dark Layout                */}
-						{/*--------------------------------------------------------------------------------*/}
 						<NavbarBrand href="/">
 							<b className="logo-icon">
 								<img
@@ -75,9 +61,6 @@ class Header extends React.Component {
 								/>
 							</b>
 						</NavbarBrand>
-						{/*--------------------------------------------------------------------------------*/}
-						{/* Mobile View Toggler  [visible only after 768px screen]                         */}
-						{/*--------------------------------------------------------------------------------*/}
 						<a className="nav-toggler d-block d-md-none" onClick={this.showMobilemenu}>
 							<i className="ti-menu ti-close" />
 						</a>
@@ -144,10 +127,7 @@ class Header extends React.Component {
 										className="btn-rounded ml-3 mb-2 mt-2"> View Profile
                   					</Button>
 								</DropdownMenu>
-							</UncontrolledDropdown>
-							{/*--------------------------------------------------------------------------------*/}
-							{/* End Profile Dropdown                                                           */}
-							{/*--------------------------------------------------------------------------------*/}
+							</UncontrolledDropdown>	
 						</Nav>
 					</Collapse>
 				</Navbar>
