@@ -55,7 +55,6 @@ class Fulllayout extends React.Component {
 		window.removeEventListener("resize", this.updateDimensions);
 	}
 
-
 	render() {
 		/*--------------------------------------------------------------------------------*/
 		/* Theme Setting && Layout Options wiil be Change From Here                       */
