@@ -32,6 +32,7 @@ import img6 from '../../assets/images/big/img6.jpg';
 import img7 from '../../assets/images/background/weatherbg.jpg';
 import { HotelRoomStatistics } from 'components/dashboard-components';
 import radissonBluHotelRoomImg from 'assets/images/radissonBluHotelRoom.jpg';
+import { ConfirmationPayment } from '../../components/dashboard-components';
 
 class UserTest2point1Payment extends React.Component {
 
@@ -63,13 +64,10 @@ class UserTest2point1Payment extends React.Component {
                                 </CardTitle>
                         </CardBody>
                         <CardBody className="border-top">
-                            <div>
-                                <h2>Finish your booking
-                                    <NavLink to="/userTest2point1End">
-                                        <Button className="btn" color="primary" size="lg" style={{ marginLeft: '15px' }} >Pay for your room</Button>{' '}
-                                    </NavLink>
-                                </h2>
-                            </div>
+                            <Row>
+                                <h2 style={{ marginLeft: '15px', marginRight: '15px', marginTop: '3px' }}>Finish booking</h2>
+                                <ConfirmationPayment />
+                            </Row>
                         </CardBody>
                     </Card>
                     <Card body outline color="warning" className="border">
@@ -82,10 +80,10 @@ class UserTest2point1Payment extends React.Component {
                     <Card>
                         <CardImg top width="100%" src={radissonBluHotelRoomImg} />
                         <CardBody>
-                            <CardTitle>Card title</CardTitle>
-                            <CardSubtitle>Card subtitle</CardSubtitle>
-                            <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-                            <Button>Button</Button>
+                            <CardTitle>Your chosen room</CardTitle>
+                            <CardSubtitle>Hotel name like, Radisson Blu</CardSubtitle>
+                            <CardText>Hotel room information</CardText>
+                            <Button>Show picutures of your room</Button>
                         </CardBody>
                     </Card>
                 </Col>

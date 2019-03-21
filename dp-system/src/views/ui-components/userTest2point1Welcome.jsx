@@ -1,6 +1,8 @@
 import React from 'react';
+
 import {
     Badge,
+    ButtonToolbar,
     Card,
     CardImg,
     CardText,
@@ -8,6 +10,7 @@ import {
     CardTitle,
     CardSubtitle,
     Button,
+    Modal,
     Row,
     Col
 } from 'reactstrap';
@@ -21,8 +24,18 @@ import {
 import { SalesSummary, Projects, Feeds } from 'components/dashboard-components';
 
 class userTest2point1Welcome extends React.Component {
+    constructor(...args) {
+        super(...args);
+
+        this.state = { modalShow: false };
+    }
+
+
     render() {
+        let modalClose = () => this.setState({ modalShow: false });
+
         return (
+
             <div>
                 <Row>
                     <Col xs="12" md="12" sm="12">
@@ -60,7 +73,6 @@ class userTest2point1Welcome extends React.Component {
                 </Row>
             </div>
         );
-
     }
 }
 

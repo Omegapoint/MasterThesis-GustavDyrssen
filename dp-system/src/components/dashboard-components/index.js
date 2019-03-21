@@ -7,6 +7,7 @@ import TextFields from './textFields/textFields';
 import OutlinedTextFields from './textFields/outlinedTextFields';
 import CheckOutPickers from './picker/checkOutPickers';
 import CheckInPickers from './picker/checkInPickers';
+import ConfirmationPayment from './confirmationPayment/confirmationPayment';
 
 export {
     SalesSummary,
@@ -16,6 +17,7 @@ export {
     CheckInPickers,
     HotelRoomStatistics,
     HotelRoomComponent,
+    ConfirmationPayment,
     Projects,
     Feeds
 };
