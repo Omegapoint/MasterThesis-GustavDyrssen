@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+xtreme-react-lite-master/
 
 # testing
 /coverage
@@ -15,8 +16,6 @@
 .env.development.local
 .env.test.local
 .env.production.local
-
-.xtreme-react-lite-master
 
 npm-debug.log*
 yarn-debug.log*
