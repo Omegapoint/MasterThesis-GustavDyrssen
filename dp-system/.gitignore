@@ -16,6 +16,8 @@
 .env.test.local
 .env.production.local
 
+.xtreme-react-lite-master
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
