@@ -36,6 +36,13 @@ import { ConfirmationPayment } from '../../components/dashboard-components';
 
 class UserTest2point1Payment extends React.Component {
 
+    constructor(props) {
+        super(props)
+        this.state = {
+            showCard: true
+        }
+    }
+
     render() {
         return <div>
             <Row>
@@ -70,11 +77,11 @@ class UserTest2point1Payment extends React.Component {
                             </Row>
                         </CardBody>
                     </Card>
-                    <Card body outline color="warning" className="border">
+                        {this.state.showCard && <Card body outline color="warning" className="border">
                         <CardTitle>Don't miss your chance</CardTitle>
                         <CardText>A hotel room was just booked at the hotel option you are looking at.</CardText>
                         <Button color="warning">Click to see what room it was</Button>
-                    </Card>
+                    </Card>}
                 </Col>
                 <Col sm="6">
                     <Card>
@@ -83,7 +90,7 @@ class UserTest2point1Payment extends React.Component {
                             <CardTitle>Your chosen room</CardTitle>
                             <CardSubtitle>Hotel name like, Radisson Blu</CardSubtitle>
                             <CardText>Hotel room information</CardText>
-                            <Button>Show picutures of your room</Button>
+                            <Button block>Show picutures of your room</Button>
                         </CardBody>
                     </Card>
                 </Col>

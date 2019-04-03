@@ -69,7 +69,7 @@ class Header extends React.Component {
 						<Nav className="ml-auto float-right" navbar>
 							<span 
 								className="ml-auto float-right" 
-								style={{ marginTop: '22px', marginRight: '15px', color:'white'}} > Don't touch this toggle switch yet
+								style={{ marginTop: '22px', marginRight: '15px', color:'white'}} > 
 							</span>
 							<label className="ml-auto float-right" htmlFor="normal-switch" style={{ marginTop: '18px', marginRight: '15px' }} >
 								<Switch

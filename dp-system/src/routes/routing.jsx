@@ -19,24 +19,6 @@ import UserTest2point1End from '../views/ui-components/userTest2point1End.jsx';
 
 var ThemeRoutes = [
   {
-    path: '/dashboard',
-    name: 'Dashboard',
-    icon: 'ti-loop',
-    component: Starter
-  },
-  {
-    path: '/userTest1',
-    name: 'User Test 1',
-    icon: 'mdi mdi-comment-processing-outline',
-    component: UserTest1
-  },
-  {
-    path: '/userTest2',
-    name: 'User Test 2',
-    icon: 'mdi mdi-arrange-send-backward',
-    component: UserTest2
-  },
-  {
     path: '/userTest2point1Welcome',
     name: 'User Test 2.1 Welcome',
     icon: 'mdi mdi-toggle-switch',
@@ -65,6 +47,24 @@ var ThemeRoutes = [
     name: 'User Test 2.1 End',
     icon: 'mdi mdi-toggle-switch',
     component: UserTest2point1End
+  },
+  {
+    path: '/dashboard',
+    name: '',
+    icon: '',
+    component: Starter
+  },
+  {
+    path: '/userTest1',
+    name: '',
+    icon: '',
+    component: UserTest1
+  },
+  {
+    path: '/userTest2',
+    name: '',
+    icon: '',
+    component: UserTest2
   },
   { path: '/', pathTo: '/dashboard', name: 'Dashboard', redirect: true }
 ];
