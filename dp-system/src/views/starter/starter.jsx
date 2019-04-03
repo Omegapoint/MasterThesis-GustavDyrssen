@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
     Card,
     CardImg,
@@ -10,6 +11,7 @@ import {
     Row,
     Col
 } from 'reactstrap';
+
 import { SalesSummary, Projects, Feeds } from 'components/dashboard-components';
 
 import img1 from '../../assets/images/big/img1.jpg';
