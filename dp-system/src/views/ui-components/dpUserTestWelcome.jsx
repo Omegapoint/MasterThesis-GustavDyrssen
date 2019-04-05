@@ -23,7 +23,7 @@ import {
 
 import { SalesSummary, Projects, Feeds } from 'components/dashboard-components';
 
-class UserTest2point1Welcome extends React.Component {
+class DpUserTestWelcome extends React.Component {
     constructor(...args) {
         super(...args);
 
@@ -61,10 +61,10 @@ class UserTest2point1Welcome extends React.Component {
                             <CardBody className="border-top">
                                 <div>
                                     <h3>Be sure to read through the instructions thuroughly</h3>
-                                    <h5>Imagine that you are going to travel and need to book a hotel room, you have decided to this through a hotel website that can offer a room for the best price.</h5> 
-                                    <h5>When you feel ready, press the button below to continue.</h5>                        
+                                    <h5>Imagine that you are going to travel and need to book a hotel room, you have decided to this through a hotel website that can offer a room for the best price.</h5>
+                                    <h5>When you feel ready, press the button below to continue.</h5>
                                 </div>
-                                <NavLink to="/userTest2point1Search">
+                                <NavLink to="/dpUserTestSearch">
                                     <Button className="btn" color="primary" size="lg">Start </Button>{' '}
                                 </NavLink>
                             </CardBody>
@@ -76,4 +76,4 @@ class UserTest2point1Welcome extends React.Component {
     }
 }
 
-export default UserTest2point1Welcome;
+export default DpUserTestWelcome;

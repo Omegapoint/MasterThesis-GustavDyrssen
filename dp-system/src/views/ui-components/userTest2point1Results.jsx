@@ -30,35 +30,8 @@ class UserTest2point1Results extends React.Component {
     render() {
         return <div>
             <Row>
-                <Col sm={6} lg={8}>
-                    <Card inverse>
-                        <CardImg width="50%" src={img7} alt="Card image cap" />
-                        <CardImgOverlay>
-                            <CardTitle>High Demand</CardTitle>
-                            <CardText>There is curently a higher then normal demand of hotel rooms in the area you are searching. Beware so that the room you are looking for does not get fully booked.</CardText>
-                            <CardText>
-                                <small className="text-white">Last updated 3 mins ago</small>
-                            </CardText>
-                        </CardImgOverlay>
-                    </Card>
-                </Col>
                 <Col sm={12}>
                         <HotelRoomComponent />
-                </Col>
-                <Col sm={6} lg={8}>
-                    <HotelRoomStatistics />
-                </Col>
-                </Row>
-                <Row>
-                <Col sm={12}>
-                    <HotelRoomComponent />
-                </Col>
-                <Col xs="12" md="4">
-                    <Card body outline color="warning" className="border">
-                        <CardTitle>Don't miss your chance</CardTitle>
-                        <CardText>A hotel room was just booked at one of the option you are looking at.</CardText>
-                        <Button color="warning">Proceed to see what room it was</Button>
-                    </Card>
                 </Col>
             </Row>
         </div>

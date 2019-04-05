@@ -32,9 +32,9 @@ import img6 from '../../assets/images/big/img6.jpg';
 import img7 from '../../assets/images/background/weatherbg.jpg';
 import { HotelRoomStatistics } from 'components/dashboard-components';
 import radissonBluHotelRoomImg from 'assets/images/radissonBluHotelRoom.jpg';
-import { ConfirmationPayment } from '../../components/dashboard-components';
+import { DpConfirmationPayment } from '../../components/dashboard-components';
 
-class UserTest2point1Payment extends React.Component {
+class DpUserTestPayment extends React.Component {
 
     constructor(props) {
         super(props)
@@ -73,10 +73,15 @@ class UserTest2point1Payment extends React.Component {
                         <CardBody className="border-top">
                             <Row>
                                 <h2 style={{ marginLeft: '15px', marginRight: '15px', marginTop: '3px' }}>Finish booking</h2>
-                                <ConfirmationPayment />
+                                <DpConfirmationPayment />
                             </Row>
                         </CardBody>
                     </Card>
+                    {this.state.showCard && <Card body outline color="warning" className="border">
+                        <CardTitle>Don't miss your chance</CardTitle>
+                        <CardText>A hotel room was just booked at the hotel option you are looking at.</CardText>
+                        <Button color="warning">Click to see what room it was</Button>
+                    </Card>}
                 </Col>
                 <Col sm="6">
                     <Card>
@@ -94,4 +99,4 @@ class UserTest2point1Payment extends React.Component {
     }
 }
 
-export default UserTest2point1Payment;
+export default DpUserTestPayment;
