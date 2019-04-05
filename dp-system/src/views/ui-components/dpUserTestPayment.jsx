@@ -15,7 +15,7 @@ import {
     Button,
     Row,
     Col,
-    Progress
+    Progress,
 } from 'reactstrap';
 
 import {
@@ -36,13 +36,6 @@ import radissonBluHotelRoomImg from 'assets/images/radissonBluHotelRoom.jpg';
 import { DpConfirmationPayment } from '../../components/dashboard-components';
 
 class DpUserTestPayment extends React.Component {
-
-    constructor(props) {
-        super(props)
-        this.state = {
-            showCard: true
-        }
-    }
 
     render() {
         return <div>
@@ -81,11 +74,11 @@ class DpUserTestPayment extends React.Component {
                             </Row>
                         </CardBody>
                     </Card>
-                    {this.state.showCard && <Card body outline color="warning" className="border">
+                    <Card body outline color="warning" className="border">
                         <CardTitle>Don't miss your chance</CardTitle>
                         <CardText>A hotel room was just booked at the hotel option you are looking at.</CardText>
                         <Button color="warning">Click to see what room it was</Button>
-                    </Card>}
+                    </Card>
                 </Col>
                 <Col sm="6">
                     <Card>

@@ -1,4 +1,6 @@
 import React from 'react';
+import { css } from '@emotion/core';
+import { ClipLoader, PacmanLoader } from 'react-spinners';
 
 import {
     Badge,
@@ -21,18 +23,20 @@ import {
     HashRouter
 } from "react-router-dom";
 
-import { SalesSummary, Projects, Feeds } from 'components/dashboard-components';
+const override = css`
+    display: block;
+    margin: 0 auto;
+    border-color: red;
+`;
 
 class DpUserTestWelcome extends React.Component {
-    constructor(...args) {
-        super(...args);
-
-        this.state = { modalShow: false };
+    constructor(props) {
+        super(props);
+        this.state = {
+            loading: true
+        };
     }
-
-
     render() {
-        let modalClose = () => this.setState({ modalShow: false });
 
         return (
 
@@ -56,7 +60,8 @@ class DpUserTestWelcome extends React.Component {
                         <Card>
                             <CardBody>
                                 <CardTitle className="mb-0">
-                                    <i className="mdi mdi-arrange-send-backward mr-2"> </i>Instructions</CardTitle>
+                                    <i className="mdi mdi-arrange-send-backward mr-2"> </i>Instructions
+                                </CardTitle>
                             </CardBody>
                             <CardBody className="border-top">
                                 <div>
@@ -64,6 +69,13 @@ class DpUserTestWelcome extends React.Component {
                                     <h5>Imagine that you are going to travel and need to book a hotel room, you have decided to this through a hotel website that can offer a room for the best price.</h5>
                                     <h5>When you feel ready, press the button below to continue.</h5>
                                 </div>
+                                <PacmanLoader
+                                    css={override}
+                                    sizeUnit={"px"}
+                                    size={50}
+                                    color={'#36D7B7'}
+                                    loading={this.state.loading}
+                                />
                                 <NavLink to="/dpUserTestSearch">
                                     <Button className="btn" color="primary" size="lg">Start </Button>{' '}
                                 </NavLink>
