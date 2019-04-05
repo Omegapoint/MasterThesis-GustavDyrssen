@@ -14,7 +14,8 @@ import {
     CardGroup,
     Button,
     Row,
-    Col
+    Col,
+    Progress
 } from 'reactstrap';
 
 import {
@@ -46,6 +47,9 @@ class DpUserTestPayment extends React.Component {
     render() {
         return <div>
             <Row>
+                <Col sm={12}>
+                    <Progress animated value="75" style={{ marginBottom: '15px' }} size="large" />
+                </Col>
                 <Col xs="12" md="12" sm="12">
                     <Card>
                         <CardBody>

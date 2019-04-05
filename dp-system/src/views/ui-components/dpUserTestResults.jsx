@@ -13,7 +13,8 @@ import {
     CardGroup,
     Button,
     Row,
-    Col
+    Col,
+    Progress
 } from 'reactstrap';
 
 import img1 from '../../assets/images/big/img1.jpg';
@@ -30,6 +31,9 @@ class DpUserTestResults extends React.Component {
     render() {
         return <div>
             <Row>
+                <Col sm={12}>
+                    <Progress animated value="50" style={{ marginBottom: '15px' }} size="large" />
+                </Col>
                 <Col sm={6} lg={8}>
                     <Card inverse>
                         <CardImg width="50%" src={img7} alt="Card image cap" />

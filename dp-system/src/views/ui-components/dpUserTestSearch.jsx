@@ -12,6 +12,7 @@ import {
     CardText,
     CardImg,
     CardImgOverlay,
+    Progress,
 } from 'reactstrap';
 
 import {
@@ -38,13 +39,7 @@ class DpUserTestSearch extends React.Component {
     render() {
         return <div>
             <Col xs="12" md="12" sm="12" >
-                <Card body outline color="warning" className="border">
-                    <CardTitle>Don't miss your chance</CardTitle>
-                    <CardText>A hotel room was just booked at the hotel option you are looking at.</CardText>
-                    <Button color="warning">Click to see what room it was</Button>
-                </Card>
-            </Col>
-            <Col xs="12" md="12" sm="12" >
+                <Progress animated value="25" style={{ marginBottom: '15px' }} size="large" />
                 <Card inverse>
                     <CardImg width="100%" src={img5} alt="Card image cap" />
                     <CardImgOverlay>
@@ -74,6 +69,13 @@ class DpUserTestSearch extends React.Component {
                             </Container>
                         </CardBody>
                     </CardImgOverlay>
+                </Card>
+            </Col>
+            <Col xs="12" md="12" sm="12" >
+                <Card body outline color="warning" className="border">
+                    <CardTitle>Don't miss your chance</CardTitle>
+                    <CardText>A hotel room was just booked at the hotel option you are looking at.</CardText>
+                    <Button color="warning">Click to see what room it was</Button>
                 </Card>
             </Col>
         </div>
