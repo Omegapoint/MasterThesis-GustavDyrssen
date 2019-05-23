@@ -38,22 +38,19 @@ class DpSearchLoaderModal extends React.Component {
                 <Button className="btn" color="primary" size="lg" style={{ marginTop: '10px' }} onClick={this.toggle}>{this.props.buttonLabel} Search for available rooms </Button>
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                     <ModalHeader toggle={this.toggle}>Prossesing your search options</ModalHeader>
-                    <ModalBody style={{ marginBottom: '25px' }} >
+                    <ModalBody style={{ marginBottom: '25px', marginRight:'70px' }} >
                         <PacmanLoader
                             css={override}
                             sizeUnit={"px"}
                             size={25}
                             color={'#36D7B7'}
                             loading={this.state.loading}
-                            alaign={'left'}
                         />
                     </ModalBody>
                     <ModalFooter>
-                        <div class="ele"></div>
-                        <NavLink to="/dpUserTestResults">
+                        <NavLink class="ele" to="/dpUserTestResults">
                             <Button className="btn" color="primary" size="lg" >Contine to search results </Button>{' '}
                         </NavLink>
-                        <Button className="btn" color="secondary" size="lg" onClick={this.toggle}>Cancel</Button>
                     </ModalFooter>
                 </Modal>
             </div>

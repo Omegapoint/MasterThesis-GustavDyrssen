@@ -9037,8 +9037,6 @@ User Profile
   background: #32325d; }
 
 .ele {
-  width: 60px;
-  height: 60px;
   
   background-color: #ff6699;
   animation: 5s fadeIn;
@@ -9052,7 +9050,8 @@ User Profile
 }
 
 @keyframes fadeIn {
-  0% {
+  50% {
+    visibility: hidden;
     opacity: 0;
   }
   100% {
