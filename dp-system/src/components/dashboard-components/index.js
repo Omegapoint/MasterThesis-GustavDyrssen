@@ -10,6 +10,7 @@ import CheckOutPickers from './picker/checkOutPickers';
 import CheckInPickers from './picker/checkInPickers';
 import ConfirmationPayment from './confirmationPayment/confirmationPayment';
 import DpConfirmationPayment from './confirmationPayment/dpConfirmationPayment';
+import DpSearchLoaderModal from './searchLoaderModal/dpSearchLoaderModal';
 
 export {
     SalesSummary,
@@ -22,6 +23,7 @@ export {
     DpHotelRoomComponent,
     ConfirmationPayment,
     DpConfirmationPayment,
+    DpSearchLoaderModal,
     Projects,
     Feeds
 };

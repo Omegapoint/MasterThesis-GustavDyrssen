@@ -6,8 +6,6 @@ import { HashRouter } from 'react-router-dom'
 
 import './assets/scss/style.css';
 
-
-
 ReactDOM.render(
   <HashRouter>
   

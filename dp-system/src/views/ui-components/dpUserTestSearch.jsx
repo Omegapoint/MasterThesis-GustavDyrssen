@@ -24,11 +24,15 @@ import {
 import img5 from '../../assets/images/big/img5.jpg';
 import { CheckInPickers, CheckOutPickers } from 'components/dashboard-components';
 import { TextFields } from 'components/dashboard-components';
+import { DpSearchLoaderModal } from 'components/dashboard-components';
 
 class DpUserTestSearch extends React.Component {
+
     constructor() {
         super();
-        this.state = { checked: false };
+        this.state = {
+            checked: false, 
+            loading: true };
         this.handleChange = this.handleChange.bind(this);
     }
 
@@ -39,7 +43,7 @@ class DpUserTestSearch extends React.Component {
     render() {
         return <div>
             <Col xs="12" md="12" sm="12" >
-                <Progress animated value="25" style={{ marginBottom: '15px' }} size="large" />
+                <Progress animated value="25" style={{ marginBottom: '15px' }} />
                 <Card inverse>
                     <CardImg width="100%" src={img5} alt="Card image cap" />
                     <CardImgOverlay>
@@ -63,9 +67,7 @@ class DpUserTestSearch extends React.Component {
                                         <TextFields />
                                     </Col>
                                 </Row>
-                                <NavLink to="/dpUserTestResults">
-                                    <Button className="btn" color="primary" size="lg" style={{ marginTop: '15px' }} >Search for available rooms</Button>{' '}
-                                </NavLink>
+                                <DpSearchLoaderModal />
                             </Container>
                         </CardBody>
                     </CardImgOverlay>

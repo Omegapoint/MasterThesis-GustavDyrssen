@@ -1,6 +1,4 @@
 import React from 'react';
-import { css } from '@emotion/core';
-import { ClipLoader, PacmanLoader } from 'react-spinners';
 
 import {
     Badge,
@@ -23,19 +21,8 @@ import {
     HashRouter
 } from "react-router-dom";
 
-const override = css`
-    display: block;
-    margin: 0 auto;
-    border-color: red;
-`;
-
 class DpUserTestWelcome extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            loading: true
-        };
-    }
+    
     render() {
 
         return (
@@ -69,13 +56,6 @@ class DpUserTestWelcome extends React.Component {
                                     <h5>Imagine that you are going to travel and need to book a hotel room, you have decided to this through a hotel website that can offer a room for the best price.</h5>
                                     <h5>When you feel ready, press the button below to continue.</h5>
                                 </div>
-                                <PacmanLoader
-                                    css={override}
-                                    sizeUnit={"px"}
-                                    size={50}
-                                    color={'#36D7B7'}
-                                    loading={this.state.loading}
-                                />
                                 <NavLink to="/dpUserTestSearch">
                                     <Button className="btn" color="primary" size="lg">Start </Button>{' '}
                                 </NavLink>
